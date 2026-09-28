@@ -1,0 +1,412 @@
+/* استایل‌های صفحه اصلی */
+/* ================= GLOBAL & UTILITIES ================= */
+
+
+
+
+
+
+.gt-link-hover {
+    transition: all 0.3s ease;
+}
+.gt-link-hover:hover {
+    opacity: 0.8;
+    transform: translateX(-4px);
+}
+
+/* ================= HERO ================= */
+.gt-hero {
+    background: radial-gradient(circle at top left, #ffffff, #f4f5f8);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 35px;
+    padding: 45px 30px; 
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+
+.gt-badge {
+    display: inline-block;
+    background: #ffe8ec;
+    color: #ef4056;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: -0.3px;
+}
+
+.gt-title {
+    font-size: clamp(2.2rem, 4.5vw, 3.4rem); 
+    font-weight: 900;
+    line-height: 1.3;
+    color: #1c1c1c;
+}
+
+.gt-title span { color: #ef4056; }
+.gt-text {
+    color: #62686e;
+    font-size: 1.05rem;
+    line-height: 1.85;
+}
+
+/* ================= WHEEL ================= */
+.gt-wheel-box {
+    height: 340px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.gt-wheel {
+    width: 200px; 
+    height: 200px;
+    background: #121212;
+    color: #ef4056;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 95px;
+    box-shadow: 0 20px 45px rgba(0,0,0,.15);
+    animation: gtFloat 4s infinite ease-in-out;
+    z-index: 3;
+    transition: all 0.4s ease;
+}
+
+.gt-wheel i {
+    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1); 
+}
+
+.gt-wheel:hover {
+    box-shadow: 0 20px 50px rgba(239, 64, 86, 0.4); 
+}
+
+.gt-wheel:hover i {
+    transform: rotate(-180deg) scale(1.05); 
+}
+
+.gt-circle { position: absolute; border-radius: 50%; }
+
+.gt-circle.one {
+    width: 260px; 
+    height: 260px;
+    background: #ffe8ec;
+}
+
+.gt-circle.two {
+    width: 340px; 
+    height: 340px;
+    border: 2px dashed #ef4056;
+    opacity: 0.6;
+    animation: gtRotate 28s linear infinite;
+}
+
+.gt-floating {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 10px 18px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #222;
+    box-shadow: 0 10px 25px rgba(0,0,0,.06);
+    z-index: 4;
+}
+
+.gt-floating i { 
+    color: #ef4056; 
+    margin-left: 6px; 
+}
+
+.gt-floating.first { 
+    top: 35px; 
+    right: 15px; 
+    animation: badgeFloat 3.5s ease-in-out infinite;
+}
+
+.gt-floating.second { 
+    bottom: 35px; 
+    left: 15px; 
+    animation: badgeFloat 4s ease-in-out infinite 1s;
+}
+
+/* ================= SERVICES ================= */
+.gt-service {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 24px;
+    text-align: center;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0 10px 30px rgba(0,0,0,.03);
+    transition: all 0.35s ease;
+}
+.gt-service:hover { 
+    transform: translateY(-8px); 
+    box-shadow: 0 15px 35px rgba(0,0,0,.07);
+}
+.gt-service-icon {
+    width: 65px; 
+    height: 65px;
+    background: #ffe8ec; 
+    color: #ef4056;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin: 0 auto 18px auto;
+    border-radius: 50%; 
+    font-size: 26px;
+}
+
+.gt-service h5 {
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.gt-service p {
+    color: #777;
+    font-size: 0.875rem;
+    margin-bottom: 0;
+}
+
+/* ================= PRODUCTS ================= */
+.gt-product-card {
+    background: white;
+    border-radius: 28px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.04);
+    box-shadow: 0 10px 30px rgba(0,0,0,.04);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.gt-product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0,0,0,.09);
+}
+
+.product-animation { animation: productShow .8s ease forwards; }
+
+.gt-product-image {
+    height: 260px; 
+    background: radial-gradient(circle, #ffffff 0%, #f8f9fa 100%);
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    position: relative; 
+    overflow: hidden;
+}
+
+.gt-product-image img {
+    max-width: 85%;
+    max-height: 210px; 
+    object-fit: contain;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.gt-product-card:hover img { transform: scale(1.08); }
+
+.no-product-image { font-size: 70px; color: #ddd; }
+
+.gt-brand {
+    position: absolute; 
+    top: 15px; 
+    right: 15px;
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(8px);
+    padding: 6px 14px; 
+    border-radius: 50px;
+    font-size: 0.78rem; 
+    font-weight: 800;
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    border: 1px solid rgba(255,255,255,0.8);
+}
+
+.gt-product-body { padding: 24px; flex-grow: 1; display: flex; flex-direction: column;}
+
+.gt-product-body h5 { 
+    font-weight: 800; 
+    font-size: 1.1rem; 
+    line-height: 1.5; 
+    margin-bottom: 12px; 
+    color: #222;
+}
+
+.gt-product-status {
+    color: #666; 
+    font-size: 0.85rem; 
+    margin-bottom: 20px; 
+    margin-top: auto;
+    font-weight: 600;
+}
+.gt-product-status i { color: #198754; margin-left: 5px; }
+
+.gt-product-footer {
+    border-top: 1px dashed #eee; 
+    padding-top: 16px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.gt-price strong { color: #ef4056; font-size: 1.35rem; font-weight: 900; }
+.gt-price small { color: #888; font-size: 0.8rem; }
+
+.gt-view-btn {
+    background: #ef4056; 
+    color: white; 
+    text-decoration: none;
+    padding: 9px 18px; 
+    border-radius: 50px; 
+    transition: all 0.3s ease;
+    font-weight: 700;
+    font-size: 0.875rem;
+    box-shadow: 0 4px 12px rgba(239, 64, 86, 0.25);
+}
+.gt-view-btn:hover { 
+    background: #d82f45; 
+    color: white; 
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(239, 64, 86, 0.35);
+}
+
+.gt-empty { 
+    background: white; 
+    padding: 60px; 
+    border-radius: 28px; 
+    text-align: center; 
+    border: 1px solid rgba(0,0,0,0.04);
+}
+.gt-empty i { font-size: 70px; color: #ddd; }
+
+/* ================= WHY US ================= */
+.gt-feature {
+    background: white; 
+    padding: 35px 25px; 
+    border-radius: 28px;
+    text-align: center; 
+    height: 100%; 
+    border: 1px solid rgba(0,0,0,0.04);
+    box-shadow: 0 10px 30px rgba(0,0,0,.03);
+    transition: all 0.35s ease;
+}
+.gt-feature:hover { transform: translateY(-8px); box-shadow: 0 15px 35px rgba(0,0,0,.06); }
+.gt-feature-icon {
+    width: 70px; 
+    height: 70px; 
+    margin: 0 auto 20px auto;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    border-radius: 50%; 
+    background: #ffe8ec; 
+    color: #ef4056; 
+    font-size: 28px;
+}
+.gt-feature h5 { font-weight: 800; margin-bottom: 10px; }
+.gt-feature p { color: #777; line-height: 1.8; font-size: 0.9rem; margin-bottom: 0; }
+
+/* ================= ABOUT ================= */
+.gt-about { 
+    background: white; 
+    padding: 45px; 
+    border-radius: 32px; 
+    border: 1px solid rgba(0,0,0,0.04);
+    box-shadow: 0 15px 40px rgba(0,0,0,.04); 
+}
+.gt-about p { color: #666; line-height: 1.9; }
+
+/* ================= STATS ================= */
+.gt-stats { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
+.gt-stat {
+    background: white; 
+    padding: 35px 20px; 
+    text-align: center;
+    border-radius: 28px; 
+    border: 1px solid rgba(0,0,0,0.04);
+    box-shadow: 0 10px 30px rgba(0,0,0,.04); 
+    transition: all 0.3s ease;
+}
+.gt-stat:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,.07); }
+.gt-stat h2 { color: #ef4056; font-weight: 900; font-size: 2.2rem; margin-bottom: 5px; }
+.gt-stat span { color: #666; font-weight: 700; font-size: 0.9rem; }
+
+/* ================= CONTACT ================= */
+.gt-contact {
+    background: linear-gradient(135deg, #ef4056, #c51e34); 
+    color: white;
+    text-align: center; 
+    padding: 60px 25px; 
+    border-radius: 35px;
+    box-shadow: 0 15px 35px rgba(239, 64, 86, 0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-scale { transition: transform 0.3s ease; }
+.hover-scale:hover { transform: scale(1.04); }
+
+/* ================= ANIMATIONS ================= */
+@keyframes gtFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+@keyframes gtRotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes badgeFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+}
+
+@keyframes productShow {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:992px){
+    .gt-wheel-box { height: 280px; }
+    .gt-wheel { width: 160px; height: 160px; font-size: 75px; }
+    .gt-circle.one { width: 210px; height: 210px; }
+    .gt-circle.two { width: 270px; height: 270px; }
+    .gt-floating { display: none; }
+}
+
+@media(max-width:576px){
+    .gt-hero { padding: 30px 18px; }
+    .gt-title { font-size: 1.8rem; }
+    .gt-stats { grid-template-columns: 1fr; }
+    .gt-about { padding: 25px; }
+    .gt-product-image { height: 220px; }
+}
+
+/* ================= FAQ ================= */
+.gt-faq .accordion { --bs-accordion-border-width: 0; }
+.gt-faq .accordion-item {
+    background: #fff; border: 1px solid rgba(0,0,0,.05) !important;
+    border-radius: 20px !important; overflow: hidden; margin-bottom: 12px;
+    box-shadow: 0 8px 22px rgba(0,0,0,.03);
+}
+.gt-faq .accordion-button {
+    font-weight: 800; font-size: 1rem; padding: 18px 22px;
+    background: #fff; color: #222; box-shadow: none;
+}
+.gt-faq .accordion-button:not(.collapsed) { color: var(--gt-red); background: #ffe8ec; }
+.gt-faq .accordion-button:focus { box-shadow: 0 0 0 .2rem rgba(239,64,86,.2); }
+.gt-faq .accordion-body { color: #555; line-height: 2; padding: 18px 22px 22px; }
+@media (max-width: 576px) {
+    .gt-faq .accordion-button { font-size: .93rem; padding: 15px 16px; }
+    .gt-faq .accordion-body { padding: 14px 16px 18px; font-size: .9rem; }
+}

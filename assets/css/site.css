@@ -1,0 +1,216 @@
+/* استایل‌های مشترک همه صفحه‌ها — رنگ‌ها را فقط اینجا تغییر دهید */
+:root {
+    --gt-red: #ef4056;
+    --gt-dark: #1b1d21;
+    --gt-bg: #f5f6f8;
+}
+
+* {
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+body {
+    background: var(--gt-bg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* رنگ اصلی */
+
+
+.bg-digi {
+    background: var(--gt-red) !important;
+}
+
+
+
+
+
+/* ================= طراحی واقعی و برداری چرخ (SVG) ================= */
+.gt-tire-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3C!-- عاج‌های بیرونی لاستیک --%3E%3Ccircle cx='50' cy='50' r='48' fill='%23121316' stroke='%232a2c33' stroke-width='3' stroke-dasharray='6 4' /%3E%3C!-- دیواره اصلی لاستیک --%3E%3Ccircle cx='50' cy='50' r='42' fill='%231e2025' /%3E%3Ccircle cx='50' cy='50' r='32' fill='%230f1013' /%3E%3C!-- رینگ آلومینیومی --%3E%3Ccircle cx='50' cy='50' r='28' fill='%23cbd5e1' stroke='%2394a3b8' stroke-width='2' /%3E%3C!-- پره‌های رینگ اسپرت --%3E%3Cg stroke='%23334155' stroke-width='4' stroke-linecap='round'%3E%3Cline x1='50' y1='50' x2='50' y2='24' /%3E%3Cline x1='50' y1='50' x2='74' y2='42' /%3E%3Cline x1='50' y1='50' x2='65' y2='72' /%3E%3Cline x1='50' y1='50' x2='35' y2='72' /%3E%3Cline x1='50' y1='50' x2='26' y2='42' /%3E%3C/g%3E%3C!-- مرکز رینگ (کپ) --%3E%3Ccircle cx='50' cy='50' r='10' fill='%23ef4056' /%3E%3Ccircle cx='50' cy='50' r='8' fill='%230f172a' /%3E%3C!-- پیچ‌های مرکز --%3E%3Ccircle cx='50' cy='45' r='1.5' fill='%23ffffff' /%3E%3Ccircle cx='55' cy='48' r='1.5' fill='%23ffffff' /%3E%3Ccircle cx='53' cy='54' r='1.5' fill='%23ffffff' /%3E%3Ccircle cx='47' cy='54' r='1.5' fill='%23ffffff' /%3E%3Ccircle cx='45' cy='48' r='1.5' fill='%23ffffff' /%3E%3C/svg%3E");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+}
+
+/* انیمیشن چرخش پادساعت‌گرد روان هنگام هاور */
+.gt-tire-logo-wrapper:hover .gt-tire-logo {
+    transform: rotate(-360deg) scale(1.08);
+    box-shadow: 0 6px 18px rgba(239, 64, 86, 0.35);
+}
+
+/* هدر */
+.gt-header {
+    background: white;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .06);
+}
+
+/* طراحی منوی نویگیشن پایین */
+.sub-navbar {
+    background-color: #f8fafc;
+    border-top: 1px solid #edf2f7;
+    position: relative;
+}
+
+.sub-nav-link {
+    position: relative;
+    padding: 0.6rem 1.2rem;
+    color: #64748b;
+    font-weight: 500;
+    font-size: 0.93rem;
+    transition: all 0.25s ease;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.sub-nav-link:hover,
+.sub-nav-link.active {
+    color: var(--gt-red) !important;
+    background-color: rgba(239, 64, 86, 0.08);
+    font-weight: 600;
+}
+
+.sub-nav-link i {
+    transition: transform 0.2s ease;
+}
+
+.sub-nav-link:hover i,
+.sub-nav-link.active i {
+    transform: translateY(-1px);
+}
+
+/* ================= تک سرچ‌بار هوشمند و واکنشی ================= */
+.navbar-search {
+    max-width: 520px;
+    transition: all 0.3s ease;
+}
+
+.navbar-search .search-box-wrapper {
+    position: relative;
+    background: #f1f3f6;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    padding: 2px 8px 2px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.navbar-search .search-box-wrapper:focus-within {
+    background: #ffffff;
+    border-color: var(--gt-red);
+    box-shadow: 0 6px 20px rgba(239, 64, 86, 0.15);
+}
+
+.navbar-search .search-input {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #2d3748;
+    padding: 8px 10px;
+    height: 40px;
+}
+
+.navbar-search .search-input::placeholder {
+    color: #94a3b8;
+    font-size: 0.86rem;
+}
+
+.navbar-search .search-btn {
+    background: none !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 0 8px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--gt-red);
+    transition: all 0.3s ease;
+}
+
+.navbar-search .search-btn i {
+    font-size: 1.18rem;
+    transition: transform 0.3s ease;
+}
+
+.navbar-search .search-btn:hover i {
+    transform: scale(1.22) rotate(-10deg);
+}
+
+/* رفتار سرچ‌بار در موبایل */
+@media (max-width: 767.98px) {
+    .navbar-search {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        padding: 12px 16px;
+        z-index: 1040;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        display: none;
+    }
+
+    .navbar-search.active {
+        display: block;
+        animation: slideDown 0.25s ease;
+    }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+main {
+    animation: fadePage .35s ease;
+}
+
+@keyframes fadePage {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    border: none;
+    border-radius: 16px;
+}
+
+/* ===== رنگ‌ها و دکمه‌های مشترک (یک تعریف برای کل سایت) ===== */
+.text-digi { color: var(--gt-red) !important; }
+.btn-digi {
+    background-color: var(--gt-red) !important;
+    border-color: var(--gt-red) !important;
+    color: #fff !important;
+    border: none;
+    transition: all 0.3s ease;
+}
+.btn-digi:hover {
+    background-color: #d82f45 !important;
+    color: #fff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(239, 64, 86, 0.35) !important;
+}
+.fw-extrabold { font-weight: 850; }
+.transition-all { transition: all 0.3s ease; }
+.transition-hover { transition: .3s; }
+.transition-hover:hover { opacity: 0.8; }
