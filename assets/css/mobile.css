@@ -113,7 +113,7 @@ body { -webkit-tap-highlight-color: transparent; }
     .scrollbar-hidden .btn { font-size: .82rem; }
     body .card-product { box-shadow: 0 2px 10px rgba(0, 0, 0, .06) !important; }
     body .card-product:hover { transform: none; }
-    body .card-product .product-img-wrapper { background: #f7f8fa; padding: .5rem !important; aspect-ratio: 1 / 1; }
+    body .card-product .product-img-wrapper { padding: .5rem !important; aspect-ratio: 1 / 1; }
     body .card-product .product-card-img { height: 100% !important; max-height: 100%; width: 100%; object-fit: contain; }
     body .card-product .card-body { padding: .7rem .7rem .8rem !important; }
     body .card-product .card-title { font-size: .84rem; line-height: 1.6; min-height: 0; margin-bottom: .4rem !important; }
@@ -179,4 +179,28 @@ body { -webkit-tap-highlight-color: transparent; }
 
     /* ---- فوتر ---- */
     footer .col-6 { padding-top: .25rem; }
+}
+
+
+/* ================= فاصله دکمه‌ها (موبایل) ================= */
+@media (max-width: 767.98px) {
+    /* هدر: دکمه جستجو و تماس */
+    .gt-header .d-flex.align-items-center.gap-2 { gap: .75rem !important; }
+
+    /* صفحه اصلی (هیرو)، درباره ما، تماس با ما: دکمه‌های زیر هم با فاصله */
+    .gt-hero .d-flex.flex-wrap.gap-3 { gap: 1rem !important; margin-top: 1.5rem; }
+    section .d-flex.flex-wrap.gap-3.mt-4 { gap: 1rem !important; margin-top: 1.5rem !important; }
+    .card .d-flex.flex-wrap.justify-content-center.gap-3 { gap: 1rem !important; }
+    .gt-contact .btn { margin-top: 1rem !important; }
+
+    /* دکمه‌های نقشه (بلد / نشان / کپی آدرس) */
+    #location .row.g-2 { --bs-gutter-y: .9rem; }
+
+    /* کارت محصول: قیمت و دکمه */
+    body .card-product .card-body .mt-auto { gap: .8rem !important; padding-top: .5rem !important; }
+    .gt-product-footer { gap: 1rem; }
+
+    /* صفحه محصول: دکمه‌های تماس و واتساپ */
+    .card.p-4.p-lg-5 .row.g-3 { --bs-gutter-y: 1.1rem; }
+    .card.p-4.p-lg-5 .pt-3.border-top .row.g-3 { margin-top: .25rem; }
 }
