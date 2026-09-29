@@ -1,0 +1,386 @@
+
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <title>
+        فروش عمده لاستیک | نمایندگی گهرتایر خرم‌آباد
+    </title>
+    <meta name="description" content="خرید عمده لاستیک گهرتایر برای تعمیرگاه‌ها، لاستیک‌فروشی‌ها، ناوگان حمل‌ونقل و شرکت‌ها؛ استعلام قیمت ویژه و موجودی از نمایندگی رسمی گهرتایر خرم‌آباد.">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="assets/fa/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+
+    <link rel="stylesheet" href="assets/css/site.css">
+    <link rel="stylesheet" href="assets/css/wholesale.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+</head>
+
+<body>
+
+    <!-- @@header:start -->
+<header class="gt-header sticky-top">
+        <div class="container py-3 position-relative">
+            <div class="d-flex align-items-center justify-content-between gap-3">
+
+                <!-- لوگو -->
+                <a href="index.html" class="text-decoration-none d-flex align-items-center gt-tire-logo-wrapper">
+                    <div class="gt-tire-logo me-2"></div>
+                    <div class="d-flex flex-column">
+                        <span class="fw-bold fs-4 text-dark lh-1 mb-1">
+                            گهرتایر
+                        </span>
+                        <small class="text-muted fs-8">
+                            خرم‌آباد
+                        </small>
+                    </div>
+                </a>
+
+                <!-- تنها سرچ‌بار پروژه (پشتیبانی همزمان از دسکتاپ و موبایل) -->
+                <form class="navbar-search flex-grow-1 mx-md-4" id="mainSearchForm" action="products.html" method="GET">
+                    <div class="search-box-wrapper">
+                        <input type="text" 
+                               name="q" 
+                               id="searchInput"
+                               class="form-control search-input" 
+                               placeholder="جستجوی برند، سایز لاستیک (مثلاً 205/60R15) یا خودرو..." 
+                               value=""
+                               autocomplete="off">
+                        
+                        <div class="d-flex align-items-center gap-1">
+                            <button class="search-btn" type="submit" aria-label="جستجو">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                            <!-- دکمه بستن سرچ فقط در موبایل -->
+                            <button type="button" class="btn-close d-md-none ms-1" id="closeSearchBtn" aria-label="بستن"></button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- حساب کاربری و سبد خرید -->
+                <div class="d-flex align-items-center gap-2">
+
+                    <!-- آیکون سرچ موبایل (کلیک برای باز کردن سرچ‌بار) -->
+                    <button type="button" class="btn btn-light border rounded-3 d-md-none text-danger" id="toggleSearchBtn" title="جستجو">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    <!-- تماس با ما (ادغام دکمه تماس و صفحه تماس) -->
+                    <div class="dropdown gt-contact-dd">
+                        <button type="button" class="btn btn-digi rounded-3 px-3 fw-bold " data-bs-toggle="dropdown" data-bs-offset="0,10" aria-expanded="false">
+                            <i class="fa-solid fa-phone me-1"></i>
+                            تماس با ما
+                            <i class="fa-solid fa-chevron-down gt-caret"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end gt-dd-menu">
+                            <li>
+                                <a class="dropdown-item" href="tel:09120346053">
+                                    <span class="dd-ico"><i class="fa-solid fa-phone"></i></span>
+                                    <span><strong>تماس تلفنی</strong><small dir="ltr">0912 034 6053</small></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://wa.me/989120346053?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%B1%D8%A7%DB%8C%20%D8%A7%D8%B3%D8%AA%D8%B9%D9%84%D8%A7%D9%85%20%D9%82%DB%8C%D9%85%D8%AA%20%D9%88%20%D9%85%D9%88%D8%AC%D9%88%D8%AF%DB%8C%20%D9%84%D8%A7%D8%B3%D8%AA%DB%8C%DA%A9%20%D9%BE%DB%8C%D8%A7%D9%85%20%D9%85%DB%8C%E2%80%8C%D8%AF%D9%87%D9%85." target="_blank" rel="noopener">
+                                    <span class="dd-ico wa"><i class="fa-brands fa-whatsapp"></i></span>
+                                    <span><strong>پیام در واتساپ</strong><small>پاسخ‌گویی سریع</small></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.instagram.com/gahartire.khoramabad/" target="_blank" rel="noopener">
+                                    <span class="dd-ico ig"><i class="fa-brands fa-instagram"></i></span>
+                                    <span><strong>اینستاگرام</strong><small dir="ltr">@gahartire.khoramabad</small></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="contact.html">
+                                    <span class="dd-ico"><i class="fa-solid fa-location-dot"></i></span>
+                                    <span><strong>آدرس و نقشه</strong><small>خرم‌آباد، میدان اسدآبادی</small></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- منوی پایین هدر -->
+        <nav class="sub-navbar">
+            <div class="container py-1 position-relative">
+                <div class="d-flex align-items-center justify-content-center gap-2 gap-md-4">
+                    
+                    <!-- خانه -->
+                    <a href="index.html" class="text-decoration-none sub-nav-link">
+                        <i class="fa-solid fa-house me-1"></i>
+                        خانه
+                    </a>
+
+                    <!-- محصولات -->
+                    <a href="products.html" class="text-decoration-none sub-nav-link">
+                        <i class="fa-solid fa-store me-1"></i>
+                        محصولات
+                    </a>
+
+                    <!-- درباره ما -->
+                    <a href="about.html" class="text-decoration-none sub-nav-link">
+                        <i class="fa-solid fa-circle-info me-1"></i>
+                        درباره ما
+                    </a>
+
+                    <!-- فروش عمده (انتهای منو، با استایل متمایز) -->
+                    <a href="wholesale.html" class="text-decoration-none sub-nav-link nav-wholesale active">
+                        <i class="fa-solid fa-boxes-stacked me-1"></i>
+                        فروش عمده
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+<!-- @@header:end -->
+
+
+    <main class="container my-4">
+
+<!-- هیرو -->
+<section class="ws-hero mb-4 mb-lg-5">
+    <span class="ws-badge"><i class="fa-solid fa-boxes-stacked ms-1"></i> فروش عمده</span>
+    <h1 class="mt-3 mb-3 fs-2">خرید عمده لاستیک گهرتایر با قیمت ویژه</h1>
+    <p class="mb-4">
+        برای تعمیرگاه‌ها، لاستیک‌فروشی‌ها، ناوگان حمل‌ونقل و شرکت‌ها، سفارش عمده لاستیک اصل گهرتایر را
+        با مشاوره تخصصی و قیمت رقابتی از نمایندگی رسمی خرم‌آباد ثبت کنید.
+    </p>
+    <div class="d-flex flex-wrap gap-2 gap-md-3">
+        <a href="tel:09120346053" class="btn btn-digi btn-lg rounded-pill px-4 fw-bold"><i class="fa-solid fa-phone me-2"></i> تماس برای استعلام</a>
+        <a href="#wsOrder" class="btn btn-outline-light btn-lg rounded-pill px-4 fw-bold"><i class="fa-brands fa-whatsapp me-2"></i> ثبت درخواست</a>
+    </div>
+</section>
+
+<!-- مخاطبان -->
+<section class="mb-5">
+    <div class="text-center mb-4">
+        <h2 class="fw-extrabold fs-4">فروش عمده برای چه کسانی؟</h2>
+    </div>
+    <div class="row row-cols-2 row-cols-lg-4 g-3">
+        <div class="col"><div class="ws-card"><div class="ws-ico"><i class="fa-solid fa-screwdriver-wrench"></i></div><h5>تعمیرگاه و لاستیک‌فروشی</h5><p>تأمین منظم سایزهای پرمصرف برای مشتریان شما.</p></div></div>
+        <div class="col"><div class="ws-card"><div class="ws-ico"><i class="fa-solid fa-truck"></i></div><h5>ناوگان حمل‌ونقل</h5><p>لاستیک وانت، کامیونت و سنگین برای ناوگان باری.</p></div></div>
+        <div class="col"><div class="ws-card"><div class="ws-ico"><i class="fa-solid fa-building"></i></div><h5>شرکت‌ها و سازمان‌ها</h5><p>تأمین لاستیک خودروهای سازمانی و پروژه‌ای.</p></div></div>
+        <div class="col"><div class="ws-card"><div class="ws-ico"><i class="fa-solid fa-store"></i></div><h5>فروشگاه‌های شهرستان</h5><p>همکاری برای تأمین لاستیک اصل در شهرهای اطراف.</p></div></div>
+    </div>
+</section>
+
+<!-- مزایا -->
+<section class="mb-5">
+    <div class="text-center mb-4">
+        <h2 class="fw-extrabold fs-4">چرا خرید عمده از گهرتایر خرم‌آباد؟</h2>
+    </div>
+    <div class="row row-cols-2 row-cols-lg-4 g-3">
+        <div class="col"><div class="ws-card"><div class="ws-ico"><i class="fa-solid fa-shield-halved"></i></div><h5>اصالت کالا</h5><p>عرضه لاستیک اصل مستقیم از نمایندگی رسمی.</p></div></div>
+        <div class="col"><div class="ws-card"><div class="ws-ico"><i class="fa-solid fa-tags"></i></div><h5>قیمت ویژه عمده</h5><p>قیمت متناسب با تعداد سفارش، با استعلام تلفنی.</p></div></div>
+        <div class="col"><div class="ws-card"><div class="ws-ico"><i class="fa-solid fa-file-signature"></i></div><h5>ضمانت کتبی</h5><p>لاستیک‌های گهرتایر با ۲ سال ضمانت کتبی.</p></div></div>
+        <div class="col"><div class="ws-card"><div class="ws-ico"><i class="fa-solid fa-headset"></i></div><h5>مشاوره تخصصی</h5><p>کمک در انتخاب سایز و مدل مناسب هر خودرو.</p></div></div>
+    </div>
+</section>
+
+<!-- مراحل -->
+<section class="mb-5">
+    <div class="text-center mb-4">
+        <h2 class="fw-extrabold fs-4">مراحل ثبت سفارش عمده</h2>
+    </div>
+    <div class="row g-3">
+        <div class="col-md-4"><div class="ws-step"><div class="ws-num">۱</div><div><h6>ارسال سایز و تعداد</h6><p>سایز و تعداد لاستیک مورد نیاز را از طریق فرم زیر یا تماس اعلام کنید.</p></div></div></div>
+        <div class="col-md-4"><div class="ws-step"><div class="ws-num">۲</div><div><h6>دریافت قیمت و موجودی</h6><p>قیمت عمده و موجودی را از کارشناس نمایندگی دریافت می‌کنید.</p></div></div></div>
+        <div class="col-md-4"><div class="ws-step"><div class="ws-num">۳</div><div><h6>هماهنگی پرداخت و تحویل</h6><p>پس از تأیید، نحوه پرداخت و تحویل سفارش هماهنگ می‌شود.</p></div></div></div>
+    </div>
+</section>
+
+<!-- دسته‌ها -->
+<section class="mb-5">
+    <div class="text-center mb-3">
+        <h2 class="fw-extrabold fs-4">دسته‌بندی‌های قابل سفارش</h2>
+    </div>
+    <div class="d-flex flex-wrap justify-content-center gap-2">
+        <a class="ws-chip" href="products.html?category=5"><i class="fa-solid fa-car-side text-digi"></i> لاستیک سواری</a>
+        <a class="ws-chip" href="products.html?category=6"><i class="fa-solid fa-truck-pickup text-digi"></i> لاستیک وانت</a>
+        <a class="ws-chip" href="products.html?category=7"><i class="fa-solid fa-mountain text-digi"></i> لاستیک آفرود</a>
+        <a class="ws-chip" href="products.html?category=8"><i class="fa-solid fa-truck text-digi"></i> لاستیک سنگین</a>
+    </div>
+</section>
+
+<!-- فرم استعلام -->
+<section class="mb-5" id="wsOrder">
+    <div class="ws-form-box">
+        <div class="text-center mb-4">
+            <span class="badge bg-danger-subtle text-digi rounded-pill px-3 py-2 fw-bold">درخواست استعلام عمده</span>
+            <h2 class="fw-extrabold fs-4 mt-3">سایز و تعداد را بفرستید، قیمت را بگیرید</h2>
+            <p class="text-secondary mb-0 small">با ارسال فرم، پیام آماده در واتساپ باز می‌شود و مستقیم برای نمایندگی ارسال می‌کنید.</p>
+        </div>
+        <form id="wsForm" class="row g-3">
+            <div class="col-md-6">
+                <label for="wsName">نام و نام خانوادگی / نام مجموعه</label>
+                <input type="text" id="wsName" class="form-control" placeholder="مثلاً: تعمیرگاه ...">
+            </div>
+            <div class="col-md-6">
+                <label for="wsType">نوع مشتری</label>
+                <select id="wsType" class="form-select">
+                    <option value="">انتخاب کنید</option>
+                    <option>تعمیرگاه / لاستیک‌فروشی</option>
+                    <option>ناوگان حمل‌ونقل</option>
+                    <option>شرکت / سازمان</option>
+                    <option>فروشگاه شهرستان</option>
+                    <option>سایر</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="wsCat">دسته لاستیک</label>
+                <select id="wsCat" class="form-select">
+                    <option value="">انتخاب کنید</option>
+                    <option>سواری</option>
+                    <option>وانت</option>
+                    <option>آفرود</option>
+                    <option>سنگین</option>
+                    <option>چند دسته</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="wsQty">تعداد تقریبی</label>
+                <input type="number" id="wsQty" class="form-control" min="1" inputmode="numeric" placeholder="مثلاً: ۴۰">
+            </div>
+            <div class="col-12">
+                <label for="wsSize">سایز لاستیک (چند سایز را با ویرگول جدا کنید)</label>
+                <input type="text" id="wsSize" class="form-control" dir="ltr" placeholder="205/60R15, 185/65R15">
+            </div>
+            <div class="col-12">
+                <label for="wsNote">توضیحات (اختیاری)</label>
+                <textarea id="wsNote" class="form-control" rows="3" placeholder="هر نکته‌ای که لازم است بدانیم..."></textarea>
+            </div>
+            <div class="col-12 d-flex flex-column flex-sm-row gap-2 justify-content-center pt-2">
+                <button type="submit" class="btn btn-digi btn-lg rounded-pill px-5 fw-bold"><i class="fa-brands fa-whatsapp me-2"></i> ارسال در واتساپ</button>
+                <a href="tel:09120346053" class="btn btn-outline-dark btn-lg rounded-pill px-5 fw-bold"><i class="fa-solid fa-phone me-2"></i> تماس تلفنی</a>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- سوالات متداول -->
+<section class="mb-4">
+    <div class="text-center mb-4">
+        <h2 class="fw-extrabold fs-4">سوالات متداول</h2>
+    </div>
+    <div class="accordion" id="wsFaq">
+        <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f1">قیمت عمده چگونه اعلام می‌شود؟</button></h3>
+            <div id="f1" class="accordion-collapse collapse" data-bs-parent="#wsFaq"><div class="accordion-body text-secondary lh-lg">قیمت عمده بر اساس سایز، مدل و تعداد سفارش تعیین می‌شود. سایز و تعداد را از طریق فرم یا تماس اعلام کنید تا کارشناس قیمت و موجودی را اعلام کند.</div></div>
+        </div>
+        <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f2">حداقل تعداد سفارش عمده چقدر است؟</button></h3>
+            <div id="f2" class="accordion-collapse collapse" data-bs-parent="#wsFaq"><div class="accordion-body text-secondary lh-lg">برای اطلاع از شرایط سفارش عمده و تعداد مناسب، با نمایندگی تماس بگیرید تا متناسب با نیاز شما راهنمایی شوید.</div></div>
+        </div>
+        <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f3">آیا لاستیک‌ها ضمانت دارند؟</button></h3>
+            <div id="f3" class="accordion-collapse collapse" data-bs-parent="#wsFaq"><div class="accordion-body text-secondary lh-lg">بله، لاستیک‌های گهرتایر با ۲ سال ضمانت کتبی عرضه می‌شوند و اصالت کالا تضمین است.</div></div>
+        </div>
+        <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f4">برای شهرهای دیگر هم ارسال دارید؟</button></h3>
+            <div id="f4" class="accordion-collapse collapse" data-bs-parent="#wsFaq"><div class="accordion-body text-secondary lh-lg">امکان ارسال و نحوه تحویل به مقصد شما هنگام ثبت سفارش هماهنگ می‌شود؛ برای اطلاع دقیق با ما تماس بگیرید.</div></div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- @@footer:start -->
+<footer class="bg-dark text-secondary mt-auto py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- معرفی -->
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <div class="gt-tire-logo"></div>
+                        <h5 class="text-white fw-bold mb-0">
+                            گهرتایر خرم‌آباد
+                        </h5>
+                    </div>
+                    <p class="small lh-lg">
+                        مرکز تخصصی فروش انواع لاستیک خودرو،
+                        سواری، شاسی‌بلند، وانت و خودروهای سنگین
+                        با تضمین اصالت کالا و قیمت مناسب.
+                    </p>
+                </div>
+
+                <!-- لینک‌ها -->
+                <div class="col-lg-2 col-6">
+                    <h6 class="text-white fw-bold mb-3">دسترسی سریع</h6>
+                    <ul class="list-unstyled small d-flex flex-column gap-2">
+                        <li><a href="index.html" class="text-secondary text-decoration-none">صفحه اصلی</a></li>
+                        <li><a href="products.html" class="text-secondary text-decoration-none">فروشگاه</a></li>
+                        <li><a href="wholesale.html" class="text-secondary text-decoration-none">فروش عمده</a></li>
+                        <li><a href="about.html" class="text-secondary text-decoration-none">درباره ما</a></li>
+                    </ul>
+                </div>
+
+                <!-- ارتباط -->
+                <div class="col-lg-2 col-6">
+                    <h6 class="text-white fw-bold mb-3">ارتباط با ما</h6>
+                    <ul class="list-unstyled small d-flex flex-column gap-2">
+                        <li><a href="contact.html" class="text-secondary text-decoration-none">تماس و آدرس</a></li>
+                        <li><a href="tel:09120346053" class="text-secondary text-decoration-none">تماس تلفنی</a></li>
+                        <li><a href="https://www.instagram.com/gahartire.khoramabad/" target="_blank" rel="noopener" class="text-secondary text-decoration-none"><i class="fa-brands fa-instagram ms-1"></i> اینستاگرام</a></li>
+                    </ul>
+                </div>
+
+                <!-- تماس -->
+                <div class="col-lg-4">
+                    <h6 class="text-white fw-bold mb-3">تماس با ما</h6>
+                    <p class="small"><i class="fa-solid fa-location-dot text-digi me-2"></i> خرم‌آباد، میدان اسدآبادی، خیابان رضا سقایی</p>
+                    <p class="small"><i class="fa-solid fa-phone text-digi me-2"></i> ۰۹۱۲۰۳۴۶۰۵۳</p>
+                    <p class="small"><i class="fa-solid fa-clock text-digi me-2"></i> شنبه تا پنجشنبه ۸ الی ۲۰</p>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="text-center small">
+                تمام حقوق متعلق به <strong class="text-white">گهرتایر خرم‌آباد</strong> می‌باشد.
+            </div>
+        </div>
+    </footer>
+<!-- @@footer:end -->
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/mobile.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/wholesale.js"></script>
+
+    <!-- اسکریپت مدیریت سرچ‌بار در موبایل -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleBtn = document.getElementById('toggleSearchBtn');
+            const closeBtn = document.getElementById('closeSearchBtn');
+            const searchForm = document.getElementById('mainSearchForm');
+            const searchInput = document.getElementById('searchInput');
+
+            if (toggleBtn && searchForm) {
+                toggleBtn.addEventListener('click', function () {
+                    searchForm.classList.add('active');
+                    if (searchInput) searchInput.focus();
+                });
+            }
+
+            if (closeBtn && searchForm) {
+                closeBtn.addEventListener('click', function () {
+                    searchForm.classList.remove('active');
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>

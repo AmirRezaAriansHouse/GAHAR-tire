@@ -3,9 +3,6 @@
     --gt-red: #ef4056;
     --gt-dark: #1b1d21;
     --gt-bg: #f5f6f8;
-    /* پس‌زمینه کادر عکس محصولات — جدا از رنگ کلی سایت؛ فقط اینجا عوض کنید */
-    --gt-product-bg: linear-gradient(160deg, #fff4f6 0%, #ffdde3 100%);
-    --gt-product-border: rgba(239, 64, 86, .16);
 }
 
 * {
@@ -217,24 +214,3 @@ main {
 .transition-all { transition: all 0.3s ease; }
 .transition-hover { transition: .3s; }
 .transition-hover:hover { opacity: 0.8; }
-
-
-/* ===== پس‌زمینه‌ی متفاوت برای محصولات (همه صفحه‌ها) ===== */
-.product-img-wrapper,
-.gt-product-image,
-.card-product .bg-light.rounded-top-4,
-.bg-light[style*="min-height: 380px"] {
-    background: var(--gt-product-bg) !important;
-}
-.card-product,
-.gt-product-card {
-    border: 1px solid var(--gt-product-border) !important;
-}
-.card-product .card-body,
-.gt-product-body {
-    background: #fff;
-}
-
-/* ===== فاصله دکمه‌ها ===== */
-.gt-header .d-flex.align-items-center.gap-2 { gap: .75rem !important; }
-.gt-product-footer { gap: 1rem; }

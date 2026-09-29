@@ -20,8 +20,21 @@
     <link rel="stylesheet" href="assets/css/site.css">
     <link rel="stylesheet" href="assets/css/location.css">
     <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
     <link rel="stylesheet" href="assets/css/mobile.css">
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TireShop",
+  "name": "گهرتایر خرم‌آباد",
+  "description": "نمایندگی رسمی گهرتایر خرم‌آباد؛ فروش لاستیک سواری، وانت و سنگین",
+  "telephone": "+989120346053",
+  "address": { "@type": "PostalAddress", "addressLocality": "خرم‌آباد", "streetAddress": "میدان اسدآبادی، خیابان رضا سقایی", "addressCountry": "IR" },
+  "openingHours": "Sa-Th 08:00-20:00",
+  "sameAs": ["https://www.instagram.com/gahartire.khoramabad/"]
+}
+</script>
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -128,10 +141,40 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
 
-                    <a href="tel:09120346053" class="btn btn-digi rounded-3 px-3 fw-bold">
-                        <i class="fa-solid fa-phone me-1"></i>
-                        <span class="d-none d-md-inline">تماس</span>
-                    </a>
+                    <!-- تماس با ما (ادغام دکمه تماس و صفحه تماس) -->
+                    <div class="dropdown gt-contact-dd">
+                        <button type="button" class="btn btn-digi rounded-3 px-3 fw-bold " data-bs-toggle="dropdown" data-bs-offset="0,10" aria-expanded="false">
+                            <i class="fa-solid fa-phone me-1"></i>
+                            تماس با ما
+                            <i class="fa-solid fa-chevron-down gt-caret"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end gt-dd-menu">
+                            <li>
+                                <a class="dropdown-item" href="tel:09120346053">
+                                    <span class="dd-ico"><i class="fa-solid fa-phone"></i></span>
+                                    <span><strong>تماس تلفنی</strong><small dir="ltr">0912 034 6053</small></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://wa.me/989120346053?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%B1%D8%A7%DB%8C%20%D8%A7%D8%B3%D8%AA%D8%B9%D9%84%D8%A7%D9%85%20%D9%82%DB%8C%D9%85%D8%AA%20%D9%88%20%D9%85%D9%88%D8%AC%D9%88%D8%AF%DB%8C%20%D9%84%D8%A7%D8%B3%D8%AA%DB%8C%DA%A9%20%D9%BE%DB%8C%D8%A7%D9%85%20%D9%85%DB%8C%E2%80%8C%D8%AF%D9%87%D9%85." target="_blank" rel="noopener">
+                                    <span class="dd-ico wa"><i class="fa-brands fa-whatsapp"></i></span>
+                                    <span><strong>پیام در واتساپ</strong><small>پاسخ‌گویی سریع</small></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.instagram.com/gahartire.khoramabad/" target="_blank" rel="noopener">
+                                    <span class="dd-ico ig"><i class="fa-brands fa-instagram"></i></span>
+                                    <span><strong>اینستاگرام</strong><small dir="ltr">@gahartire.khoramabad</small></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="contact.html">
+                                    <span class="dd-ico"><i class="fa-solid fa-location-dot"></i></span>
+                                    <span><strong>آدرس و نقشه</strong><small>خرم‌آباد، میدان اسدآبادی</small></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
                 </div>
 
@@ -141,7 +184,7 @@
         <!-- منوی پایین هدر -->
         <nav class="sub-navbar">
             <div class="container py-1 position-relative">
-                <div class="d-flex align-items-center justify-content-center gap-2 gap-md-3">
+                <div class="d-flex align-items-center justify-content-center gap-2 gap-md-4">
                     
                     <!-- خانه -->
                     <a href="index.html" class="text-decoration-none sub-nav-link active">
@@ -161,10 +204,10 @@
                         درباره ما
                     </a>
 
-                    <!-- تماس با ما -->
-                    <a href="contact.html" class="text-decoration-none sub-nav-link">
-                        <i class="fa-solid fa-phone me-1"></i>
-                        تماس با ما
+                    <!-- فروش عمده (انتهای منو، با استایل متمایز) -->
+                    <a href="wholesale.html" class="text-decoration-none sub-nav-link nav-wholesale ">
+                        <i class="fa-solid fa-boxes-stacked me-1"></i>
+                        فروش عمده
                     </a>
 
                 </div>
@@ -224,45 +267,13 @@
     </div>
 </section>
 
-<!-- ================= FOUR CARDS ================= -->
+<!-- ================= TRUST STRIP ================= -->
 <section class="mb-5">
-    <div class="row g-4">
-        <div class="col-6 col-lg-3">
-            <div class="gt-service">
-                <div class="gt-service-icon">
-                    <i class="fa-solid fa-shield-halved"></i>
-                </div>
-                <h5>ضمانت اصالت</h5>
-                <p>تضمین کیفیت و اصل بودن محصولات.</p>
-            </div>
-        </div>
-        <div class="col-6 col-lg-3">
-            <div class="gt-service">
-                <div class="gt-service-icon">
-                    <i class="fa-solid fa-tags"></i>
-                </div>
-                <h5>قیمت مناسب</h5>
-                <p>خرید مستقیم با قیمت رقابتی.</p>
-            </div>
-        </div>
-        <div class="col-6 col-lg-3">
-            <div class="gt-service">
-                <div class="gt-service-icon">
-                    <i class="fa-solid fa-headset"></i>
-                </div>
-                <h5>مشاوره تخصصی</h5>
-                <p>انتخاب بهترین تایر برای خودرو.</p>
-            </div>
-        </div>
-        <div class="col-6 col-lg-3">
-            <div class="gt-service">
-                <div class="gt-service-icon">
-                    <i class="fa-solid fa-truck-fast"></i>
-                </div>
-                <h5>ارسال سریع</h5>
-                <p>تحویل سریع سفارش‌ها.</p>
-            </div>
-        </div>
+    <div class="gt-trust">
+        <div class="gt-trust-item"><div class="ico"><i class="fa-solid fa-award"></i></div><div><strong>نمایندگی رسمی</strong><small>گهرتایر خرم‌آباد</small></div></div>
+        <div class="gt-trust-item"><div class="ico"><i class="fa-solid fa-shield-halved"></i></div><div><strong>ضمانت اصالت</strong><small>لاستیک اصل و تضمینی</small></div></div>
+        <div class="gt-trust-item"><div class="ico"><i class="fa-solid fa-file-signature"></i></div><div><strong>۲ سال ضمانت کتبی</strong><small>روی محصولات گهرتایر</small></div></div>
+        <div class="gt-trust-item"><div class="ico"><i class="fa-solid fa-headset"></i></div><div><strong>مشاوره تخصصی</strong><small>انتخاب سایز مناسب خودرو</small></div></div>
     </div>
 </section>
 
@@ -383,7 +394,7 @@
 </section>
 
 <!-- ================= WHY US ================= -->
-<section class="mb-5">
+<section class="mb-5 gt-dark-panel">
     <div class="text-center mb-4">
         <span class="gt-badge">چرا ما؟</span>
         <h2 class="fw-extrabold mt-3">تجربه خرید متفاوت با گهرتایر</h2>
@@ -452,8 +463,8 @@
                     <span>تنوع محصول</span>
                 </div>
                 <div class="gt-stat">
-                    <h2>رسمی</h2>
-                    <span>نمایندگی گهرتایر</span>
+                    <h2>نمایندگی</h2>
+                    <span>رسمی گهرتایر</span>
                 </div>
             </div>
         </div>
@@ -600,6 +611,21 @@
     </main>
 
     <!-- فوتر -->
+    <!-- @@cta:start -->
+<div class="container mb-4 gt-cta-wrap">
+        <div class="gt-cta">
+            <div>
+                <h3>سایز لاستیک خودروتان را می‌دانید؟</h3>
+                <p>همین حالا برای استعلام قیمت و موجودی تماس بگیرید یا در واتساپ پیام بدهید.</p>
+            </div>
+            <div class="cta-btns d-flex flex-wrap gap-2">
+                <a href="tel:09120346053" class="btn btn-light btn-lg rounded-pill px-4"><i class="fa-solid fa-phone me-2"></i> تماس تلفنی</a>
+                <a href="https://wa.me/989120346053?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%B1%D8%A7%DB%8C%20%D8%A7%D8%B3%D8%AA%D8%B9%D9%84%D8%A7%D9%85%20%D9%82%DB%8C%D9%85%D8%AA%20%D9%88%20%D9%85%D9%88%D8%AC%D9%88%D8%AF%DB%8C%20%D9%84%D8%A7%D8%B3%D8%AA%DB%8C%DA%A9%20%D9%BE%DB%8C%D8%A7%D9%85%20%D9%85%DB%8C%E2%80%8C%D8%AF%D9%87%D9%85." target="_blank" rel="noopener" class="btn btn-outline-light btn-lg rounded-pill px-4"><i class="fa-brands fa-whatsapp me-2"></i> واتساپ</a>
+            </div>
+        </div>
+    </div>
+<!-- @@cta:end -->
+
     <!-- @@footer:start -->
 <footer class="bg-dark text-secondary mt-auto py-5">
         <div class="container">
@@ -625,6 +651,7 @@
                     <ul class="list-unstyled small d-flex flex-column gap-2">
                         <li><a href="index.html" class="text-secondary text-decoration-none">صفحه اصلی</a></li>
                         <li><a href="products.html" class="text-secondary text-decoration-none">فروشگاه</a></li>
+                        <li><a href="wholesale.html" class="text-secondary text-decoration-none">فروش عمده</a></li>
                         <li><a href="about.html" class="text-secondary text-decoration-none">درباره ما</a></li>
                     </ul>
                 </div>
@@ -635,6 +662,7 @@
                     <ul class="list-unstyled small d-flex flex-column gap-2">
                         <li><a href="contact.html" class="text-secondary text-decoration-none">تماس و آدرس</a></li>
                         <li><a href="tel:09120346053" class="text-secondary text-decoration-none">تماس تلفنی</a></li>
+                        <li><a href="https://www.instagram.com/gahartire.khoramabad/" target="_blank" rel="noopener" class="text-secondary text-decoration-none"><i class="fa-brands fa-instagram ms-1"></i> اینستاگرام</a></li>
                     </ul>
                 </div>
 
@@ -660,6 +688,7 @@
     <!-- Bootstrap JS -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/mobile.js"></script>
+    <script src="assets/js/theme.js"></script>
 
     <!-- اسکریپت مدیریت سرچ‌بار در موبایل -->
     <script>

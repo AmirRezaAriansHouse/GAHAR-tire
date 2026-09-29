@@ -19,10 +19,13 @@ def active_for(name):
     if name == "index.html": return "home"
     if name == "about.html": return "about"
     if name == "contact.html": return "contact"
+    if name == "wholesale.html": return "wholesale"
     if name.startswith("product"): return "products"
     return None
 
 header, footer = read("partials/header.html").strip(), read("partials/footer.html").strip()
+cta = read("partials/cta.html").strip()
+NO_CTA = {"contact.html", "wholesale.html"}  # این صفحه‌ها بخش تماس اختصاصی دارند
 
 for page in sorted(glob.glob("*.html")):
     s = read(page)
@@ -33,6 +36,11 @@ for page in sorted(glob.glob("*.html")):
                lambda m: "<!-- @@header:start -->\n" + h + "\n<!-- @@header:end -->", s, flags=re.S)
     s = re.sub(r"<!-- @@footer:start -->.*?<!-- @@footer:end -->",
                lambda m: "<!-- @@footer:start -->\n" + footer + "\n<!-- @@footer:end -->", s, flags=re.S)
+    if page not in NO_CTA:
+        if "<!-- @@cta:start -->" not in s:
+            s = s.replace("<!-- @@footer:start -->", "<!-- @@cta:start -->\n<!-- @@cta:end -->\n\n    <!-- @@footer:start -->", 1)
+        s = re.sub(r"<!-- @@cta:start -->.*?<!-- @@cta:end -->",
+                   lambda m: "<!-- @@cta:start -->\n" + cta + "\n<!-- @@cta:end -->", s, flags=re.S)
     with open(page, "w", encoding="utf-8") as f:
         f.write(s)
     print("ok", page)

@@ -44,10 +44,40 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
 
-                    <a href="tel:09120346053" class="btn btn-digi rounded-3 px-3 fw-bold">
-                        <i class="fa-solid fa-phone me-1"></i>
-                        <span class="d-none d-md-inline">تماس</span>
-                    </a>
+                    <!-- تماس با ما (ادغام دکمه تماس و صفحه تماس) -->
+                    <div class="dropdown gt-contact-dd">
+                        <button type="button" class="btn btn-digi rounded-3 px-3 fw-bold {{active:contact}}" data-bs-toggle="dropdown" data-bs-offset="0,10" aria-expanded="false">
+                            <i class="fa-solid fa-phone me-1"></i>
+                            تماس با ما
+                            <i class="fa-solid fa-chevron-down gt-caret"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end gt-dd-menu">
+                            <li>
+                                <a class="dropdown-item" href="tel:09120346053">
+                                    <span class="dd-ico"><i class="fa-solid fa-phone"></i></span>
+                                    <span><strong>تماس تلفنی</strong><small dir="ltr">0912 034 6053</small></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://wa.me/989120346053?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%B1%D8%A7%DB%8C%20%D8%A7%D8%B3%D8%AA%D8%B9%D9%84%D8%A7%D9%85%20%D9%82%DB%8C%D9%85%D8%AA%20%D9%88%20%D9%85%D9%88%D8%AC%D9%88%D8%AF%DB%8C%20%D9%84%D8%A7%D8%B3%D8%AA%DB%8C%DA%A9%20%D9%BE%DB%8C%D8%A7%D9%85%20%D9%85%DB%8C%E2%80%8C%D8%AF%D9%87%D9%85." target="_blank" rel="noopener">
+                                    <span class="dd-ico wa"><i class="fa-brands fa-whatsapp"></i></span>
+                                    <span><strong>پیام در واتساپ</strong><small>پاسخ‌گویی سریع</small></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.instagram.com/gahartire.khoramabad/" target="_blank" rel="noopener">
+                                    <span class="dd-ico ig"><i class="fa-brands fa-instagram"></i></span>
+                                    <span><strong>اینستاگرام</strong><small dir="ltr">@gahartire.khoramabad</small></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="contact.html">
+                                    <span class="dd-ico"><i class="fa-solid fa-location-dot"></i></span>
+                                    <span><strong>آدرس و نقشه</strong><small>خرم‌آباد، میدان اسدآبادی</small></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
                 </div>
 
@@ -57,7 +87,7 @@
         <!-- منوی پایین هدر -->
         <nav class="sub-navbar">
             <div class="container py-1 position-relative">
-                <div class="d-flex align-items-center justify-content-center gap-2 gap-md-3">
+                <div class="d-flex align-items-center justify-content-center gap-2 gap-md-4">
                     
                     <!-- خانه -->
                     <a href="index.html" class="text-decoration-none sub-nav-link {{active:home}}">
@@ -77,10 +107,10 @@
                         درباره ما
                     </a>
 
-                    <!-- تماس با ما -->
-                    <a href="contact.html" class="text-decoration-none sub-nav-link {{active:contact}}">
-                        <i class="fa-solid fa-phone me-1"></i>
-                        تماس با ما
+                    <!-- فروش عمده (انتهای منو، با استایل متمایز) -->
+                    <a href="wholesale.html" class="text-decoration-none sub-nav-link nav-wholesale {{active:wholesale}}">
+                        <i class="fa-solid fa-boxes-stacked me-1"></i>
+                        فروش عمده
                     </a>
 
                 </div>
