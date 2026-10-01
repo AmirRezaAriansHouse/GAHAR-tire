@@ -51,11 +51,12 @@ html { scroll-behavior: smooth; }
 }
 
 /* ---------- تیترها: خط‌چین شبیه نوشته‌های کناره لاستیک ---------- */
-main h2.fw-extrabold::after {
+main h2.fw-extrabold::after,
+main h1.h2.fw-extrabold::after {
     content: ""; display: block; width: 68px; height: 5px; margin-top: .7rem; border-radius: 3px;
     background: repeating-linear-gradient(90deg, var(--gt-red) 0 12px, transparent 12px 18px);
 }
-main .text-center > h2.fw-extrabold::after, main h2.fw-extrabold.text-center::after { margin-right: auto; margin-left: auto; }
+main .text-center > h2.fw-extrabold::after, main .text-center > h1.h2.fw-extrabold::after, main h2.fw-extrabold.text-center::after { margin-right: auto; margin-left: auto; }
 
 /* ---------- آیکون‌ها: حلقه خط‌چین چرخان (مثل رینگ) ---------- */
 .gt-service-icon, .gt-feature-icon, .ws-ico { position: relative; }
@@ -130,7 +131,7 @@ main .text-center > h2.fw-extrabold::after, main h2.fw-extrabold.text-center::af
 
 /* ---------- کارت‌های محصول: نورپردازی شوروم ---------- */
 /* پس‌زمینه تیره‌ی متمایز برای عکس محصول تا از رنگ کلی سایت جدا شود */
-.gt-product-image, .product-img-wrapper, .card-product .bg-light, .bg-light:has(> .style-main-img) {
+.gt-product-image, .product-img-wrapper, .card-product .bg-light:not(.badge), .bg-light:has(> .style-main-img) {
     background: var(--tread-light), radial-gradient(circle at 50% 38%, #454a55 0%, #2a2d34 52%, #17181c 100%) !important;
 }
 .gt-product-card, .card-product { position: relative; }
@@ -202,7 +203,7 @@ html.gt-js .reveal.in { opacity: 1; transform: none; }
     .gt-cta h3 { font-size: 1.15rem; }
     .gt-cta .btn { width: 100%; }
     .gt-cta .cta-btns { display: flex; flex-direction: column; gap: .6rem; }
-    main h2.fw-extrabold::after { width: 54px; height: 4px; }
+    main h2.fw-extrabold::after, main h1.h2.fw-extrabold::after { width: 54px; height: 4px; }
 }
 
 
@@ -228,3 +229,23 @@ html.gt-js .reveal.in { opacity: 1; transform: none; }
     .gt-ig-card .btn { width: 100%; }
     .gt-ig-card h5 { font-size: .98rem; }
 }
+
+/* ---------- کردیت طراح (اینستاگرام) ---------- */
+.gt-credit { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: .6rem; }
+.gt-credit-label { font-size: .8rem; color: rgba(255, 255, 255, .6); }
+.gt-insta {
+    --ig: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    display: inline-flex; align-items: center; gap: .5rem;
+    padding: .35rem .95rem .35rem .8rem; border-radius: 50px;
+    text-decoration: none; font-weight: 700; font-size: .82rem; color: #fff;
+    background: var(--ig); box-shadow: 0 4px 14px rgba(214, 36, 159, .35);
+    transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+}
+.gt-insta i { font-size: 1.15rem; }
+.gt-insta:hover, .gt-insta:focus-visible {
+    color: #fff; transform: translateY(-2px); filter: saturate(1.15);
+    box-shadow: 0 8px 20px rgba(214, 36, 159, .5);
+}
+
+/* دسترس‌پذیری: تضاد متن‌های خاکستری روی پس‌زمینهٔ روشن (بیش از 4.5:1) */
+.text-secondary, .text-muted { color: #5c636a !important; }

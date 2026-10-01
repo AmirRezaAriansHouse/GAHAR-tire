@@ -73,3 +73,9 @@ input[type=number] {
 .anim-heartbeat {
     animation: heartBeat 0.6s ease-in-out;
 }
+
+/* جدول مشخصات صفحه‌های محصول */
+.gt-specs dt, .gt-specs dd { padding: .65rem 0; margin: 0; border-bottom: 1px dashed #e3e5e8; }
+.gt-specs dt { color: #5c636a; font-weight: 600; }
+.gt-specs dd { color: #1b1d21; font-weight: 700; }
+.gt-specs dt:nth-last-of-type(1), .gt-specs dd:last-of-type { border-bottom: 0; }

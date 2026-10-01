@@ -195,7 +195,7 @@
 .product-animation { animation: productShow .8s ease forwards; }
 
 .gt-product-image {
-    height: 260px; 
+    height: 280px; 
     background: radial-gradient(circle, #ffffff 0%, #f8f9fa 100%);
     display: flex; 
     justify-content: center; 
@@ -205,8 +205,8 @@
 }
 
 .gt-product-image img {
-    max-width: 85%;
-    max-height: 210px; 
+    max-width: 90%;
+    max-height: 235px; 
     object-fit: contain;
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }

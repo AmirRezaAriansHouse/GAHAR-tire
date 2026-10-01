@@ -59,7 +59,7 @@ body { -webkit-tap-highlight-color: transparent; }
     body .gt-about { padding: 22px 20px; }
 
     /* ---- تیترها ---- */
-    h2.fw-extrabold { font-size: 1.3rem; }
+    h2.fw-extrabold, h1.h2.fw-extrabold { font-size: 1.3rem; }
     body .gt-product-image { height: 200px; }
     body .gt-product-image img { object-fit: contain; }
 
@@ -97,6 +97,7 @@ body { -webkit-tap-highlight-color: transparent; }
 }
 
 
+
 /* ================= بهبود طراحی موبایل: محصولات، جزئیات محصول، درباره ما، تماس ================= */
 @media (max-width: 767.98px) {
     main.container { padding-right: 14px; padding-left: 14px; }
@@ -106,7 +107,7 @@ body { -webkit-tap-highlight-color: transparent; }
     /* ---- صفحه محصولات ---- */
     .product-col { min-width: 0; }
     .row.row-cols-2.g-3 { --bs-gutter-x: .7rem; --bs-gutter-y: .7rem; }
-    h4.fs-3 { font-size: 1.25rem !important; }
+    h4.fs-3, h1.fs-3 { font-size: 1.25rem !important; }
     .badge.fs-7 { font-size: .72rem !important; padding: .35rem .7rem !important; }
     .scrollbar-hidden { margin-right: -14px; margin-left: -14px; padding: 0 14px .5rem; flex-wrap: nowrap; scrollbar-width: none; }
     .scrollbar-hidden::-webkit-scrollbar { display: none; }
@@ -166,7 +167,7 @@ body { -webkit-tap-highlight-color: transparent; }
 
     /* ---- تماس با ما ---- */
     .text-center.mb-5 { margin-bottom: 1.25rem !important; }
-    .text-center.mb-5 h2 { font-size: 1.15rem; line-height: 1.8; }
+    .text-center.mb-5 h2, .text-center.mb-5 h1.h2 { font-size: 1.15rem; line-height: 1.8; }
     .row.g-4.mb-4 { --bs-gutter-x: .7rem; --bs-gutter-y: .7rem; }
     .row.g-4.mb-4 .card.p-4 { padding: 1rem .6rem !important; border-radius: 1.1rem !important; }
     .row.g-4.mb-4 .card .rounded-circle { width: 46px !important; height: 46px !important; margin-bottom: .6rem !important; }
@@ -187,4 +188,172 @@ body { -webkit-tap-highlight-color: transparent; }
     .ws-hero .d-flex, .gt-cta .cta-btns { gap: .9rem !important; }
     .ws-form-box .col-12.d-flex { gap: .9rem !important; }
     .gt-dd-menu { min-width: 250px; }
+}
+
+/* ---- محصولات: تصاویر بزرگ‌تر و کاملاً بدون کراپ ---- */
+@media (min-width: 768px) {
+    body .card-product .product-img-wrapper {
+        min-height: 260px !important;
+    }
+    body .card-product .product-card-img {
+        height: 235px !important;
+        max-height: 235px !important;
+        width: auto !important;
+        max-width: 100% !important;
+        object-fit: contain !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    /* کارت‌های محصولات موبایل: جمع‌وجورتر و متعادل‌تر */
+    body .card-product {
+        height: auto !important;
+        min-height: 0 !important;
+        border-radius: 16px !important;
+    }
+    body .card-product .product-img-wrapper {
+        min-height: 148px !important;
+        height: 148px !important;
+        aspect-ratio: auto !important;
+        padding: .3rem !important;
+    }
+    body .card-product .product-card-img {
+        height: 138px !important;
+        max-height: 138px !important;
+        width: auto !important;
+        max-width: 96% !important;
+        object-fit: contain !important;
+    }
+    body .card-product .card-body {
+        padding: .55rem .6rem .65rem !important;
+    }
+    body .card-product .card-title {
+        font-size: .8rem !important;
+        line-height: 1.45 !important;
+        margin-bottom: .3rem !important;
+    }
+    body .card-product .product-meta {
+        gap: .3rem !important;
+        margin-bottom: .45rem !important;
+    }
+    body .card-product .product-meta .badge {
+        font-size: .61rem !important;
+        padding: .2rem .38rem !important;
+    }
+    body .card-product .card-body .mt-auto {
+        gap: .35rem !important;
+        padding-top: .1rem !important;
+    }
+    body .card-product .card-body .mt-auto .text-digi {
+        font-size: .69rem !important;
+    }
+    body .card-product .card-body .mt-auto .btn {
+        font-size: .72rem !important;
+        padding: .34rem .45rem !important;
+    }
+}
+
+/* ---- محصولات صفحه اصلی: بزرگ‌تر بدون کراپ ---- */
+@media (max-width: 767.98px) {
+    body .gt-product-image {
+        height: 225px !important;
+    }
+    body .gt-product-image img {
+        max-width: 92% !important;
+        max-height: 210px !important;
+        width: auto !important;
+        object-fit: contain !important;
+    }
+}
+
+
+/* ============================================================
+   کارت محصول موبایل — طراحی مجدد (این بلوک آخرین قانون است و
+   قوانین قدیمی بالای فایل را برای کارت‌های محصول بازنویسی می‌کند)
+   ============================================================ */
+@media (max-width: 767.98px) {
+    .row.row-cols-2.g-3 { --bs-gutter-x: .75rem; --bs-gutter-y: .75rem; }
+
+    body .card-product {
+        border-radius: 18px !important;
+        border: 1px solid #eceef2 !important;
+        box-shadow: 0 4px 14px rgba(27, 29, 33, .05) !important;
+        overflow: hidden;
+    }
+    body .card-product::after { display: none; }
+
+    /* --- تصویر: قاب روشن و مربع‌نزدیک، بدون کراپ --- */
+    body .card-product .product-img-wrapper {
+        background: linear-gradient(180deg, #f6f7f9 0%, #eceef2 100%) !important;
+        height: auto !important; min-height: 0 !important;
+        aspect-ratio: 4 / 5 !important;
+        padding: 10px !important;
+        border-bottom: 1px solid #eceef2;
+    }
+    body .card-product .product-card-img {
+        height: 100% !important; max-height: 100% !important;
+        width: 100% !important; max-width: 100% !important;
+        object-fit: contain !important;
+        border-radius: 10px !important;
+        mix-blend-mode: normal;
+    }
+
+    /* --- نشان موجودی: کوچک، شیشه‌ای، گوشه بالا --- */
+    body .card-product .pc-stock {
+        margin: 8px !important;
+        padding: .28rem .55rem !important;
+        font-size: .64rem !important;
+        font-weight: 800 !important;
+        border-radius: 50px !important;
+        line-height: 1.2;
+        background: rgba(255, 255, 255, .94) !important;
+        backdrop-filter: blur(4px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, .12);
+        display: inline-flex; align-items: center; gap: .3rem;
+    }
+    body .card-product .pc-stock i { margin: 0 !important; font-size: .6rem; }
+    body .card-product .pc-stock-ok { color: #12813f !important; border-color: rgba(18, 129, 63, .25) !important; }
+    body .card-product .pc-stock-ask { color: #6b7280 !important; border-color: #e1e4ea !important; }
+
+    /* --- متن --- */
+    body .card-product .card-body { padding: .7rem .75rem .8rem !important; gap: 0; }
+    body .card-product .card-title {
+        font-size: .86rem !important; font-weight: 800 !important;
+        line-height: 1.6 !important; min-height: 3.2em;
+        margin: 0 0 .35rem !important; color: var(--gt-dark) !important;
+    }
+    body .card-product .pc-sub {
+        display: flex; align-items: center; gap: .35rem;
+        font-size: .72rem; font-weight: 600; color: #7b8290;
+        margin-bottom: .6rem; min-width: 0;
+    }
+    body .card-product .pc-sub i { font-size: .62rem; color: var(--gt-red); flex: 0 0 auto; }
+    body .card-product .pc-sub span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+    /* --- قیمت و دکمه --- */
+    body .card-product .card-body .mt-auto {
+        border-top: 1px dashed #e3e6ec !important;
+        padding-top: .6rem !important;
+        gap: .5rem !important;
+        flex-direction: column; align-items: stretch !important;
+    }
+    body .card-product .card-body .mt-auto small { display: none !important; }
+    body .card-product .card-body .mt-auto .text-digi {
+        font-size: .72rem !important; font-weight: 700 !important;
+        display: flex; align-items: center; gap: .3rem; color: #4b5160 !important;
+    }
+    body .card-product .card-body .mt-auto .text-digi::before {
+        content: "\f095"; font-family: "Font Awesome 6 Free"; font-weight: 900;
+        font-size: .62rem; color: var(--gt-red);
+    }
+    body .card-product .card-body .mt-auto .btn {
+        width: 100%; justify-content: center;
+        font-size: .8rem !important; font-weight: 800;
+        padding: .55rem .5rem !important;
+        border-radius: 12px !important;
+        box-shadow: 0 4px 12px rgba(239, 64, 86, .22) !important;
+    }
+}
+@media (max-width: 767.98px) {
+    body .card-product .pc-t-brand { display: none; }
 }
