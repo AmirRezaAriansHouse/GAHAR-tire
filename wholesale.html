@@ -12,14 +12,54 @@
     </title>
     <meta name="description" content="خرید عمده لاستیک گهرتایر برای تعمیرگاه‌ها، لاستیک‌فروشی‌ها، ناوگان حمل‌ونقل و شرکت‌ها؛ استعلام قیمت ویژه و موجودی از نمایندگی رسمی گهرتایر خرم‌آباد.">
 
-    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
-    <link rel="stylesheet" href="assets/fa/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/fonts.css">
+    <!-- @@css:start custom=site,wholesale,theme,mobile -->
+    <meta name="theme-color" content="#ef4056">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="assets/manifest.json">
+    <link rel="preload" href="assets/fonts/Vazirmatn-VF.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fa/webfonts/subset-solid.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/dist/base.min.css?v=689fc029">
+    <link rel="stylesheet" href="assets/dist/page-site-wholesale-theme-mobile.min.css?v=1d7bd0a7">
+    <!-- @@css:end -->
 
-    <link rel="stylesheet" href="assets/css/site.css">
-    <link rel="stylesheet" href="assets/css/wholesale.css">
-    <link rel="stylesheet" href="assets/css/theme.css">
-    <link rel="stylesheet" href="assets/css/mobile.css">
+    <!-- @@seo:start -->
+    <link rel="canonical" href="https://gahartirekh.ir/wholesale.html">
+    <meta property="og:locale" content="fa_IR">
+    <meta property="og:site_name" content="گهرتایر خرم‌آباد">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="فروش عمده لاستیک | نمایندگی گهرتایر خرم‌آباد">
+    <meta property="og:description" content="خرید عمده لاستیک گهرتایر برای تعمیرگاه‌ها، لاستیک‌فروشی‌ها، ناوگان حمل‌ونقل و شرکت‌ها؛ استعلام قیمت ویژه و موجودی از نمایندگی رسمی گهرتایر خرم‌آباد.">
+    <meta property="og:url" content="https://gahartirekh.ir/wholesale.html">
+    <meta property="og:image" content="https://gahartirekh.ir/assets/og-default.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="خرید عمده لاستیک گهرتایر با قیمت ویژه">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="فروش عمده لاستیک | نمایندگی گهرتایر خرم‌آباد">
+    <meta name="twitter:description" content="خرید عمده لاستیک گهرتایر برای تعمیرگاه‌ها، لاستیک‌فروشی‌ها، ناوگان حمل‌ونقل و شرکت‌ها؛ استعلام قیمت ویژه و موجودی از نمایندگی رسمی گهرتایر خرم‌آباد.">
+    <meta name="twitter:image" content="https://gahartirekh.ir/assets/og-default.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "خانه",
+      "item": "https://gahartirekh.ir/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "فروش عمده",
+      "item": "https://gahartirekh.ir/wholesale.html"
+    }
+  ]
+}
+</script>
+    <!-- @@seo:end -->
 </head>
 
 <body>
@@ -55,7 +95,7 @@
                         
                         <div class="d-flex align-items-center gap-1">
                             <button class="search-btn" type="submit" aria-label="جستجو">
-                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
                             </button>
                             <!-- دکمه بستن سرچ فقط در موبایل -->
                             <button type="button" class="btn-close d-md-none ms-1" id="closeSearchBtn" aria-label="بستن"></button>
@@ -67,39 +107,39 @@
                 <div class="d-flex align-items-center gap-2">
 
                     <!-- آیکون سرچ موبایل (کلیک برای باز کردن سرچ‌بار) -->
-                    <button type="button" class="btn btn-light border rounded-3 d-md-none text-danger" id="toggleSearchBtn" title="جستجو">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                    <button type="button" class="btn btn-light border rounded-3 d-md-none text-danger" id="toggleSearchBtn" title="جستجو" aria-label="جستجو">
+                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
                     </button>
 
                     <!-- تماس با ما (ادغام دکمه تماس و صفحه تماس) -->
                     <div class="dropdown gt-contact-dd">
                         <button type="button" class="btn btn-digi rounded-3 px-3 fw-bold " data-bs-toggle="dropdown" data-bs-offset="0,10" aria-expanded="false">
-                            <i class="fa-solid fa-phone me-1"></i>
+                            <i class="fa-solid fa-phone me-1" aria-hidden="true"></i>
                             تماس با ما
-                            <i class="fa-solid fa-chevron-down gt-caret"></i>
+                            <i class="fa-solid fa-chevron-down gt-caret" aria-hidden="true"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end gt-dd-menu">
                             <li>
                                 <a class="dropdown-item" href="tel:09120346053">
-                                    <span class="dd-ico"><i class="fa-solid fa-phone"></i></span>
+                                    <span class="dd-ico"><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
                                     <span><strong>تماس تلفنی</strong><small dir="ltr">0912 034 6053</small></span>
                                 </a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="https://wa.me/989120346053?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%B1%D8%A7%DB%8C%20%D8%A7%D8%B3%D8%AA%D8%B9%D9%84%D8%A7%D9%85%20%D9%82%DB%8C%D9%85%D8%AA%20%D9%88%20%D9%85%D9%88%D8%AC%D9%88%D8%AF%DB%8C%20%D9%84%D8%A7%D8%B3%D8%AA%DB%8C%DA%A9%20%D9%BE%DB%8C%D8%A7%D9%85%20%D9%85%DB%8C%E2%80%8C%D8%AF%D9%87%D9%85." target="_blank" rel="noopener">
-                                    <span class="dd-ico wa"><i class="fa-brands fa-whatsapp"></i></span>
+                                    <span class="dd-ico wa"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></span>
                                     <span><strong>پیام در واتساپ</strong><small>پاسخ‌گویی سریع</small></span>
                                 </a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="https://www.instagram.com/gahartire.khoramabad/" target="_blank" rel="noopener">
-                                    <span class="dd-ico ig"><i class="fa-brands fa-instagram"></i></span>
+                                    <span class="dd-ico ig"><i class="fa-brands fa-instagram" aria-hidden="true"></i></span>
                                     <span><strong>اینستاگرام</strong><small dir="ltr">@gahartire.khoramabad</small></span>
                                 </a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="contact.html">
-                                    <span class="dd-ico"><i class="fa-solid fa-location-dot"></i></span>
+                                    <span class="dd-ico"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
                                     <span><strong>آدرس و نقشه</strong><small>خرم‌آباد، میدان اسدآبادی</small></span>
                                 </a>
                             </li>
@@ -118,25 +158,25 @@
                     
                     <!-- خانه -->
                     <a href="index.html" class="text-decoration-none sub-nav-link">
-                        <i class="fa-solid fa-house me-1"></i>
+                        <i class="fa-solid fa-house me-1" aria-hidden="true"></i>
                         خانه
                     </a>
 
                     <!-- محصولات -->
                     <a href="products.html" class="text-decoration-none sub-nav-link">
-                        <i class="fa-solid fa-store me-1"></i>
+                        <i class="fa-solid fa-store me-1" aria-hidden="true"></i>
                         محصولات
                     </a>
 
                     <!-- درباره ما -->
                     <a href="about.html" class="text-decoration-none sub-nav-link">
-                        <i class="fa-solid fa-circle-info me-1"></i>
+                        <i class="fa-solid fa-circle-info me-1" aria-hidden="true"></i>
                         درباره ما
                     </a>
 
                     <!-- فروش عمده (انتهای منو، با استایل متمایز) -->
                     <a href="wholesale.html" class="text-decoration-none sub-nav-link nav-wholesale active">
-                        <i class="fa-solid fa-boxes-stacked me-1"></i>
+                        <i class="fa-solid fa-boxes-stacked me-1" aria-hidden="true"></i>
                         فروش عمده
                     </a>
 
@@ -151,15 +191,15 @@
 
 <!-- هیرو -->
 <section class="ws-hero mb-4 mb-lg-5">
-    <span class="ws-badge"><i class="fa-solid fa-boxes-stacked ms-1"></i> فروش عمده</span>
+    <span class="ws-badge"><i class="fa-solid fa-boxes-stacked ms-1" aria-hidden="true"></i> فروش عمده</span>
     <h1 class="mt-3 mb-3 fs-2">خرید عمده لاستیک گهرتایر با قیمت ویژه</h1>
     <p class="mb-4">
         برای تعمیرگاه‌ها، لاستیک‌فروشی‌ها، ناوگان حمل‌ونقل و شرکت‌ها، سفارش عمده لاستیک اصل گهرتایر را
         با مشاوره تخصصی و قیمت رقابتی از نمایندگی رسمی خرم‌آباد ثبت کنید.
     </p>
     <div class="d-flex flex-wrap gap-2 gap-md-3">
-        <a href="tel:09120346053" class="btn btn-digi btn-lg rounded-pill px-4 fw-bold"><i class="fa-solid fa-phone me-2"></i> تماس برای استعلام</a>
-        <a href="#wsOrder" class="btn btn-outline-light btn-lg rounded-pill px-4 fw-bold"><i class="fa-brands fa-whatsapp me-2"></i> ثبت درخواست</a>
+        <a href="tel:09120346053" class="btn btn-digi btn-lg rounded-pill px-4 fw-bold"><i class="fa-solid fa-phone me-2" aria-hidden="true"></i> تماس برای استعلام</a>
+        <a href="#wsOrder" class="btn btn-outline-light btn-lg rounded-pill px-4 fw-bold"><i class="fa-brands fa-whatsapp me-2" aria-hidden="true"></i> ثبت درخواست</a>
     </div>
 </section>
 
@@ -169,10 +209,10 @@
         <h2 class="fw-extrabold fs-4">فروش عمده برای چه کسانی؟</h2>
     </div>
     <div class="row row-cols-2 row-cols-lg-4 g-3">
-        <div class="col"><div class="ws-card"><div class="ws-ico"><i class="fa-solid fa-screwdriver-wrench"></i></div><h5>تعمیرگاه و لاستیک‌فروشی</h5><p>تأمین منظم سایزهای پرمصرف برای مشتریان شما.</p></div></div>
-        <div class="col"><div class="ws-card"><div class="ws-ico"><i class="fa-solid fa-truck"></i></div><h5>ناوگان حمل‌ونقل</h5><p>لاستیک وانت، کامیونت و سنگین برای ناوگان باری.</p></div></div>
-        <div class="col"><div class="ws-card"><div class="ws-ico"><i class="fa-solid fa-building"></i></div><h5>شرکت‌ها و سازمان‌ها</h5><p>تأمین لاستیک خودروهای سازمانی و پروژه‌ای.</p></div></div>
-        <div class="col"><div class="ws-card"><div class="ws-ico"><i class="fa-solid fa-store"></i></div><h5>فروشگاه‌های شهرستان</h5><p>همکاری برای تأمین لاستیک اصل در شهرهای اطراف.</p></div></div>
+        <div class="col"><div class="ws-card"><div class="ws-ico"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i></div><h5>تعمیرگاه و لاستیک‌فروشی</h5><p>تأمین منظم سایزهای پرمصرف برای مشتریان شما.</p></div></div>
+        <div class="col"><div class="ws-card"><div class="ws-ico"><i class="fa-solid fa-truck" aria-hidden="true"></i></div><h5>ناوگان حمل‌ونقل</h5><p>لاستیک وانت، کامیونت و سنگین برای ناوگان باری.</p></div></div>
+        <div class="col"><div class="ws-card"><div class="ws-ico"><i class="fa-solid fa-building" aria-hidden="true"></i></div><h5>شرکت‌ها و سازمان‌ها</h5><p>تأمین لاستیک خودروهای سازمانی و پروژه‌ای.</p></div></div>
+        <div class="col"><div class="ws-card"><div class="ws-ico"><i class="fa-solid fa-store" aria-hidden="true"></i></div><h5>فروشگاه‌های شهرستان</h5><p>همکاری برای تأمین لاستیک اصل در شهرهای اطراف.</p></div></div>
     </div>
 </section>
 
@@ -182,10 +222,10 @@
         <h2 class="fw-extrabold fs-4">چرا خرید عمده از گهرتایر خرم‌آباد؟</h2>
     </div>
     <div class="row row-cols-2 row-cols-lg-4 g-3">
-        <div class="col"><div class="ws-card"><div class="ws-ico"><i class="fa-solid fa-shield-halved"></i></div><h5>اصالت کالا</h5><p>عرضه لاستیک اصل مستقیم از نمایندگی رسمی.</p></div></div>
-        <div class="col"><div class="ws-card"><div class="ws-ico"><i class="fa-solid fa-tags"></i></div><h5>قیمت ویژه عمده</h5><p>قیمت متناسب با تعداد سفارش، با استعلام تلفنی.</p></div></div>
-        <div class="col"><div class="ws-card"><div class="ws-ico"><i class="fa-solid fa-file-signature"></i></div><h5>ضمانت کتبی</h5><p>لاستیک‌های گهرتایر با ۲ سال ضمانت کتبی.</p></div></div>
-        <div class="col"><div class="ws-card"><div class="ws-ico"><i class="fa-solid fa-headset"></i></div><h5>مشاوره تخصصی</h5><p>کمک در انتخاب سایز و مدل مناسب هر خودرو.</p></div></div>
+        <div class="col"><div class="ws-card"><div class="ws-ico"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div><h5>اصالت کالا</h5><p>عرضه لاستیک اصل مستقیم از نمایندگی رسمی.</p></div></div>
+        <div class="col"><div class="ws-card"><div class="ws-ico"><i class="fa-solid fa-tags" aria-hidden="true"></i></div><h5>قیمت ویژه عمده</h5><p>قیمت متناسب با تعداد سفارش، با استعلام تلفنی.</p></div></div>
+        <div class="col"><div class="ws-card"><div class="ws-ico"><i class="fa-solid fa-file-signature" aria-hidden="true"></i></div><h5>ضمانت کتبی</h5><p>لاستیک‌های گهرتایر با ۲ سال ضمانت کتبی.</p></div></div>
+        <div class="col"><div class="ws-card"><div class="ws-ico"><i class="fa-solid fa-headset" aria-hidden="true"></i></div><h5>مشاوره تخصصی</h5><p>کمک در انتخاب سایز و مدل مناسب هر خودرو.</p></div></div>
     </div>
 </section>
 
@@ -207,10 +247,10 @@
         <h2 class="fw-extrabold fs-4">دسته‌بندی‌های قابل سفارش</h2>
     </div>
     <div class="d-flex flex-wrap justify-content-center gap-2">
-        <a class="ws-chip" href="products.html?category=5"><i class="fa-solid fa-car-side text-digi"></i> لاستیک سواری</a>
-        <a class="ws-chip" href="products.html?category=6"><i class="fa-solid fa-truck-pickup text-digi"></i> لاستیک وانت</a>
-        <a class="ws-chip" href="products.html?category=7"><i class="fa-solid fa-mountain text-digi"></i> لاستیک آفرود</a>
-        <a class="ws-chip" href="products.html?category=8"><i class="fa-solid fa-truck text-digi"></i> لاستیک سنگین</a>
+        <a class="ws-chip" href="products.html?category=5"><i class="fa-solid fa-car-side text-digi" aria-hidden="true"></i> لاستیک سواری</a>
+        <a class="ws-chip" href="products.html?category=6"><i class="fa-solid fa-truck-pickup text-digi" aria-hidden="true"></i> لاستیک وانت</a>
+        <a class="ws-chip" href="products.html?category=7"><i class="fa-solid fa-mountain text-digi" aria-hidden="true"></i> لاستیک آفرود</a>
+        <a class="ws-chip" href="products.html?category=8"><i class="fa-solid fa-truck text-digi" aria-hidden="true"></i> لاستیک سنگین</a>
     </div>
 </section>
 
@@ -222,10 +262,10 @@
             <h2 class="fw-extrabold fs-4 mt-3">سایز و تعداد را بفرستید، قیمت را بگیرید</h2>
             <p class="text-secondary mb-0 small">با ارسال فرم، پیام آماده در واتساپ باز می‌شود و مستقیم برای نمایندگی ارسال می‌کنید.</p>
         </div>
-        <form id="wsForm" class="row g-3">
+        <form id="wsForm" class="row g-3" novalidate>
             <div class="col-md-6">
                 <label for="wsName">نام و نام خانوادگی / نام مجموعه</label>
-                <input type="text" id="wsName" class="form-control" placeholder="مثلاً: تعمیرگاه ...">
+                <input type="text" id="wsName" class="form-control" autocomplete="organization" placeholder="مثلاً: تعمیرگاه ...">
             </div>
             <div class="col-md-6">
                 <label for="wsType">نوع مشتری</label>
@@ -250,21 +290,24 @@
                 </select>
             </div>
             <div class="col-md-6">
-                <label for="wsQty">تعداد تقریبی</label>
-                <input type="number" id="wsQty" class="form-control" min="1" inputmode="numeric" placeholder="مثلاً: ۴۰">
+                <label for="wsQty">تعداد تقریبی <span class="text-danger" aria-hidden="true">*</span></label>
+                <input type="number" id="wsQty" class="form-control" min="1" inputmode="numeric" placeholder="مثلاً: ۴۰" required aria-required="true" aria-describedby="wsQtyErr">
+                <div class="invalid-feedback" id="wsQtyErr">تعداد را وارد کنید (حداقل ۱).</div>
             </div>
             <div class="col-12">
-                <label for="wsSize">سایز لاستیک (چند سایز را با ویرگول جدا کنید)</label>
-                <input type="text" id="wsSize" class="form-control" dir="ltr" placeholder="205/60R15, 185/65R15">
+                <label for="wsSize">سایز لاستیک (چند سایز را با ویرگول جدا کنید) <span class="text-danger" aria-hidden="true">*</span></label>
+                <input type="text" id="wsSize" class="form-control" dir="ltr" placeholder="205/60R15, 185/65R15" required aria-required="true" aria-describedby="wsSizeErr">
+                <div class="invalid-feedback" id="wsSizeErr">سایز لاستیک را وارد کنید.</div>
             </div>
             <div class="col-12">
                 <label for="wsNote">توضیحات (اختیاری)</label>
                 <textarea id="wsNote" class="form-control" rows="3" placeholder="هر نکته‌ای که لازم است بدانیم..."></textarea>
             </div>
             <div class="col-12 d-flex flex-column flex-sm-row gap-2 justify-content-center pt-2">
-                <button type="submit" class="btn btn-digi btn-lg rounded-pill px-5 fw-bold"><i class="fa-brands fa-whatsapp me-2"></i> ارسال در واتساپ</button>
-                <a href="tel:09120346053" class="btn btn-outline-dark btn-lg rounded-pill px-5 fw-bold"><i class="fa-solid fa-phone me-2"></i> تماس تلفنی</a>
+                <button type="submit" class="btn btn-digi btn-lg rounded-pill px-5 fw-bold"><i class="fa-brands fa-whatsapp me-2" aria-hidden="true"></i> ارسال در واتساپ</button>
+                <a href="tel:09120346053" class="btn btn-outline-dark btn-lg rounded-pill px-5 fw-bold"><i class="fa-solid fa-phone me-2" aria-hidden="true"></i> تماس تلفنی</a>
             </div>
+        <div id="wsStatus" class="visually-hidden" role="status" aria-live="polite"></div>
         </form>
     </div>
 </section>
@@ -332,16 +375,16 @@
                     <ul class="list-unstyled small d-flex flex-column gap-2">
                         <li><a href="contact.html" class="text-secondary text-decoration-none">تماس و آدرس</a></li>
                         <li><a href="tel:09120346053" class="text-secondary text-decoration-none">تماس تلفنی</a></li>
-                        <li><a href="https://www.instagram.com/gahartire.khoramabad/" target="_blank" rel="noopener" class="text-secondary text-decoration-none"><i class="fa-brands fa-instagram ms-1"></i> اینستاگرام</a></li>
+                        <li><a href="https://www.instagram.com/gahartire.khoramabad/" target="_blank" rel="noopener" class="text-secondary text-decoration-none"><i class="fa-brands fa-instagram ms-1" aria-hidden="true"></i> اینستاگرام</a></li>
                     </ul>
                 </div>
 
                 <!-- تماس -->
                 <div class="col-lg-4">
                     <h6 class="text-white fw-bold mb-3">تماس با ما</h6>
-                    <p class="small"><i class="fa-solid fa-location-dot text-digi me-2"></i> خرم‌آباد، میدان اسدآبادی، خیابان رضا سقایی</p>
-                    <p class="small"><i class="fa-solid fa-phone text-digi me-2"></i> ۰۹۱۲۰۳۴۶۰۵۳</p>
-                    <p class="small"><i class="fa-solid fa-clock text-digi me-2"></i> شنبه تا پنجشنبه ۸ الی ۲۰</p>
+                    <p class="small"><i class="fa-solid fa-location-dot text-digi me-2" aria-hidden="true"></i> خرم‌آباد، میدان اسدآبادی، خیابان رضا سقایی</p>
+                    <p class="small"><i class="fa-solid fa-phone text-digi me-2" aria-hidden="true"></i> ۰۹۱۲۰۳۴۶۰۵۳</p>
+                    <p class="small"><i class="fa-solid fa-clock text-digi me-2" aria-hidden="true"></i> شنبه تا پنجشنبه ۸ الی ۲۰</p>
                 </div>
             </div>
 
@@ -349,6 +392,13 @@
 
             <div class="text-center small">
                 تمام حقوق متعلق به <strong class="text-white">گهرتایر خرم‌آباد</strong> می‌باشد.
+            </div>
+            <div class="text-center mt-3 gt-credit">
+                <span class="gt-credit-label">طراحی و توسعه وب‌سایت</span>
+                <a href="https://www.instagram.com/amir_reza_arian_/" target="_blank" rel="noopener" class="gt-insta" aria-label="اینستاگرام طراح سایت: amir_reza_arian_">
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    <span dir="ltr">amir_reza_arian_</span>
+                </a>
             </div>
         </div>
     </footer>

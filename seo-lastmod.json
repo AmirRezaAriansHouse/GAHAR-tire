@@ -1,0 +1,210 @@
+{
+ "about.html": {
+  "date": "2026-10-01",
+  "hash": "b126313408c878097697239e8a8cfb29"
+ },
+ "article-size-guide.html": {
+  "date": "2026-10-01",
+  "hash": "c1edb28480aa1a8942006b07173c1810"
+ },
+ "articles.html": {
+  "date": "2026-10-01",
+  "hash": "7a486357ac04d7432131a1fcf7c71956"
+ },
+ "bus-1000-20-gahar-tire.html": {
+  "date": "2026-10-01",
+  "hash": "0f4d14c1e8b0e110fbf3bc2b2e7cafc0"
+ },
+ "category-heavy-tires.html": {
+  "date": "2026-10-01",
+  "hash": "e43551fbe28b87819a22c3344eca9193"
+ },
+ "category-offroad-tires.html": {
+  "date": "2026-10-01",
+  "hash": "9e9bcadb0afce4e37a6215442efdc9e2"
+ },
+ "category-passenger-tires.html": {
+  "date": "2026-10-01",
+  "hash": "7aae9046c28df7bbfee03b43a9c4971d"
+ },
+ "category-pickup-tires.html": {
+  "date": "2026-10-01",
+  "hash": "8959582b1d228659b69d15c7f63c4f43"
+ },
+ "contact.html": {
+  "date": "2026-10-01",
+  "hash": "65a7bde3d33f67b78cd249b8b95cb06a"
+ },
+ "dena-205-55r16-yazd.html": {
+  "date": "2026-10-01",
+  "hash": "1906e26927592bd9ef72f4f492f24902"
+ },
+ "hilux-255-70r15-gahar-tire.html": {
+  "date": "2026-10-01",
+  "hash": "8ecb98ee09b9dc120b38210e91fcfaff"
+ },
+ "hilux-265-65r17-gahar-tire.html": {
+  "date": "2026-10-01",
+  "hash": "692cd5d52e3c37b6b680b260ea078fd4"
+ },
+ "hilux-285-75r16-gahar-tire.html": {
+  "date": "2026-10-01",
+  "hash": "74ed25d5380ab41aa4c15d3e1120148c"
+ },
+ "index.html": {
+  "date": "2026-10-01",
+  "hash": "6ace0d1ab127bb7aad8a87d259a03f9e"
+ },
+ "nissan-700-16-gahar-tire.html": {
+  "date": "2026-10-01",
+  "hash": "a6611bc6d482cfee4ad734beedff02d9"
+ },
+ "nissan-750-16-gahar-tire.html": {
+  "date": "2026-10-01",
+  "hash": "3e9b35a95a170b0906696787e04fc916"
+ },
+ "nissan-750r16-gahar-tire.html": {
+  "date": "2026-10-01",
+  "hash": "2cea02129d5b250e204f2d9fd5111dc8"
+ },
+ "peikan-tiba-175-70r13-barez.html": {
+  "date": "2026-10-01",
+  "hash": "aa3c277308f2c8a6e2a0bbad5fd857cc"
+ },
+ "peikan-tiba-175-70r13-kavir.html": {
+  "date": "2026-10-01",
+  "hash": "c3bf51feb8e6e1f49afe32d0f6f8f238"
+ },
+ "peikan-tiba-175-70r13-yazd.html": {
+  "date": "2026-10-01",
+  "hash": "45f758953a6e1907fa3c7a2d9dc9362f"
+ },
+ "peugeot-185-60r15-yazd.html": {
+  "date": "2026-10-01",
+  "hash": "24783b4fb1bbbb982d7219b48a87c23c"
+ },
+ "peugeot-185-65r14-barez.html": {
+  "date": "2026-10-01",
+  "hash": "6dbbbb7481fc86113b01f0dc024f1b67"
+ },
+ "peugeot-185-65r14-gahar-tire.html": {
+  "date": "2026-10-01",
+  "hash": "261a2538d683cd81423b77b538b4e718"
+ },
+ "peugeot-185-65r14-yazd.html": {
+  "date": "2026-10-01",
+  "hash": "3e804855b839d2a4ae8fcb5389029b3f"
+ },
+ "peugeot-185-65r15-kavir.html": {
+  "date": "2026-10-01",
+  "hash": "c52c0c6643725520a48985eeb74c494a"
+ },
+ "peugeot-205-60r14-barez.html": {
+  "date": "2026-10-01",
+  "hash": "4a77a345da279fae1cdef16c8ec6afaf"
+ },
+ "peugeot-205-60r14-kavir.html": {
+  "date": "2026-10-01",
+  "hash": "32b198ed2e2d462db2dafb24748d6e8c"
+ },
+ "peugeot-205-60r14-yazd.html": {
+  "date": "2026-10-01",
+  "hash": "dfa38ebedf27adad7e4c6b3166fea586"
+ },
+ "pride-165-65r13-barez.html": {
+  "date": "2026-10-01",
+  "hash": "ffcd6c224bc95caa863be1fc943eb560"
+ },
+ "pride-165-65r13-yazd.html": {
+  "date": "2026-10-01",
+  "hash": "db1f1f778c5ca4131f2646aaec0a266b"
+ },
+ "pride-175-60r13-barez.html": {
+  "date": "2026-10-01",
+  "hash": "78b0e130f92f9bfeee76a6df32e485cf"
+ },
+ "pride-175-60r13-kavir.html": {
+  "date": "2026-10-01",
+  "hash": "0a18867972fd9bdfd1c58628ae075801"
+ },
+ "pride-175-60r13-yazd.html": {
+  "date": "2026-10-01",
+  "hash": "faf2c9482fb8e95de9cca01728c61ff3"
+ },
+ "product-2.html": {
+  "date": "2026-10-01",
+  "hash": "a146d8c3ce02e04856266cfde7e4ae3e"
+ },
+ "product-3.html": {
+  "date": "2026-10-01",
+  "hash": "8f2d40bb26ad8aeb7377bb96434f1d66"
+ },
+ "product-5.html": {
+  "date": "2026-10-01",
+  "hash": "b714e0e75575de46cd4c5b49ce1ea3e0"
+ },
+ "product-6.html": {
+  "date": "2026-10-01",
+  "hash": "c58818efb0bc5f0827081dde1407d2a6"
+ },
+ "product-7.html": {
+  "date": "2026-10-01",
+  "hash": "12ad12114f664748b71eacfd414638f6"
+ },
+ "product-8.html": {
+  "date": "2026-10-01",
+  "hash": "fd642cf637f233350a8497a9ecda82e2"
+ },
+ "product-9.html": {
+  "date": "2026-10-01",
+  "hash": "87825a00871329dd6e2c38ab1a70a08d"
+ },
+ "products.html": {
+  "date": "2026-10-01",
+  "hash": "87bc23f7d42e1b4f3bb58abc74d90750"
+ },
+ "samand-185-65r15-barez.html": {
+  "date": "2026-10-01",
+  "hash": "2372fdea081639f1dccfd05185af5ebe"
+ },
+ "samand-195-65r15-yazd.html": {
+  "date": "2026-10-01",
+  "hash": "f90a8cf6763ccf261eea583677ce9e11"
+ },
+ "samand-205-60r15-barez.html": {
+  "date": "2026-10-01",
+  "hash": "62d9114ac234a9d40e507b6d27f462e4"
+ },
+ "samand-205-60r15-iran-tire.html": {
+  "date": "2026-10-01",
+  "hash": "5074f082523c0e5610ab460afe74416f"
+ },
+ "samand-205-60r15-yazd.html": {
+  "date": "2026-10-01",
+  "hash": "855895b8bdf094e7f3393e11e4831d90"
+ },
+ "tiba-175-70r13-gahar-tire.html": {
+  "date": "2026-10-01",
+  "hash": "f5e4d04d8b45c49bd5821f4365ef5b25"
+ },
+ "truck-1200-20-gahar-tire.html": {
+  "date": "2026-10-01",
+  "hash": "9dd2da9aea56bf3c0e58e63cd7317f3b"
+ },
+ "truck-911-900-20-gahar-tire.html": {
+  "date": "2026-10-01",
+  "hash": "8ec8407be01c3514e33dee112dc9a0e8"
+ },
+ "truck-front-1200-24-gahar-tire.html": {
+  "date": "2026-10-01",
+  "hash": "ffecc1d1ca546cd8c329dac90fdba07c"
+ },
+ "truck-rear-1200-24-gahar-tire.html": {
+  "date": "2026-10-01",
+  "hash": "333c938fcb8dce2206b87fed9d0b8440"
+ },
+ "wholesale.html": {
+  "date": "2026-10-01",
+  "hash": "187955fa74751697a43455b5903bd48c"
+ }
+}

@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /404.html
+Disallow: /tools/
+Disallow: /templates/
+Disallow: /partials/
+Disallow: /*.md$
+
+Sitemap: https://gahartirekh.ir/sitemap.xml
