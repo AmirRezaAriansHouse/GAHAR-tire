@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>{{title}}</title>
+  <meta name="description" content="{{meta_description}}">
+  <!-- @@css:start custom=site,theme,mobile -->
+  <meta name="theme-color" content="#ef4056">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/Vazirmatn-VF.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/dist/base.min.css?v=8291fa40">
+  <link rel="stylesheet" href="assets/dist/page-site-theme-mobile.min.css?v=c5c78ead">
+  <!-- @@css:end -->
+  <!-- @@seo:start -->
+  <!-- @@seo:end -->
+</head>
+<body>
+  <!-- @@header:start -->
+  <!-- @@header:end -->
+  <main class="container my-4 my-lg-5" id="main">
+    <nav aria-label="breadcrumb" class="mb-4">
+      <ol class="breadcrumb bg-light px-4 py-3 rounded-4 shadow-sm mb-0 small border-0">
+        <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-muted fw-semibold">خانه</a></li>
+        <li class="breadcrumb-item"><a href="products.html" class="text-decoration-none text-muted fw-semibold">فروشگاه</a></li>
+        <li class="breadcrumb-item active text-dark fw-bold" aria-current="page">{{h1}}</li>
+      </ol>
+    </nav>
+    <section class="card border-0 shadow-sm rounded-5 p-4 p-lg-5 bg-white mb-4">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <span class="badge bg-light text-danger border px-3 py-2 rounded-pill mb-3">گهرتایر خرم‌آباد</span>
+          <h1 class="fw-extrabold text-dark fs-2 lh-base mb-3">{{h1}}</h1>
+          <p class="text-secondary lh-lg mb-3">{{intro}}</p>
+          <p class="text-secondary lh-lg mb-0">قیمت و موجودی روز هر سایز از طریق تماس یا واتساپ قابل استعلام است. برای انتخاب دقیق، سایز درج‌شده روی خودرو را با مشخصات محصول تطبیق دهید.</p>
+        </div>
+        <div class="col-lg-4">
+          <div class="bg-light rounded-4 p-4 border">
+            <div class="fw-bold text-dark mb-2">دسته محصولات</div>
+            <div class="text-secondary small lh-lg">{{category_summary}}</div>
+            <a href="products.html" class="btn btn-digi w-100 rounded-4 fw-bold mt-3">مشاهده همه لاستیک‌ها</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mb-5">
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4">
+        <h2 class="h4 fw-bold text-dark mb-0">محصولات {{short_name}}</h2>
+        <span class="text-muted small">{{count}} محصول</span>
+      </div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        {{products_html}}
+      </div>
+    </section>
+  </main>
+  <!-- @@cta:start -->
+  <!-- @@cta:end -->
+  <!-- @@footer:start -->
+  <!-- @@footer:end -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/mobile.js"></script>
+  <script src="assets/js/theme.js"></script>
+</body>
+</html>

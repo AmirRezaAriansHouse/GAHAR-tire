@@ -1,0 +1,175 @@
+<!-- @@generated-product: این فایل خروجی build.py است؛ مستقیماً ویرایش نکنید (products.json را تغییر دهید) -->
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <title>{{title}}</title>
+    <meta name="description" content="{{meta_description}}">
+
+    <!-- @@css:start custom=site,product,theme,mobile -->
+    <meta name="theme-color" content="#ef4056">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="preload" href="assets/fonts/Vazirmatn-VF.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fa/webfonts/subset-solid.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/dist/base.min.css?v=8291fa40">
+    <link rel="stylesheet" href="assets/dist/page-site-product-theme-mobile.min.css?v=c5c78ead">
+    <!-- @@css:end -->
+    <!-- @@seo:start -->
+    <!-- @@seo:end -->
+
+</head>
+
+<body>
+
+    <!-- @@header:start -->
+<!-- @@header:end -->
+
+    <main class="container my-4" id="main">
+<div class="container my-4 my-lg-5">
+
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb bg-light px-4 py-3 rounded-4 shadow-sm mb-0 small border-0">
+            <li class="breadcrumb-item">
+                <a href="products.html" class="text-decoration-none text-muted fw-semibold transition-hover">
+                    <i class="fa-solid fa-house-chimney ms-1 text-digi" aria-hidden="true"></i> فروشگاه
+                </a>
+            </li>
+{{category_crumb}}
+            <li class="breadcrumb-item active text-dark fw-bold" aria-current="page">{{h1}}</li>
+        </ol>
+    </nav>
+
+    <div class="card border-0 shadow-sm rounded-5 p-4 p-lg-5 bg-white mb-4 position-relative overflow-hidden">
+        <div class="row g-4 g-lg-5 align-items-center">
+            <div class="col-lg-5">
+                <div class="position-relative p-4 bg-light rounded-4 d-flex align-items-center justify-content-center" style="min-height: 380px;">
+                    <img src="{{image}}" alt="{{alt}}" class="img-fluid rounded-4 style-main-img">
+                </div>
+            </div>
+
+            <div class="col-lg-7 d-flex flex-column justify-content-between">
+                <div>
+                    <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 gap-2">
+                        <span class="badge bg-light text-secondary border px-3 py-2 rounded-pill fw-semibold">کد کالا: {{code}}</span>
+                        {{stock_badge}}
+                    </div>
+
+                    <h1 class="fw-extrabold mb-3 text-dark fs-2 lh-base">{{h1}}</h1>
+                    <p class="text-secondary mb-4">{{lead}}</p>
+
+                    <div class="row g-3 text-center my-4 py-3 bg-light rounded-4 border-0">
+                        <div class="col-4">
+                            <i class="fa-solid fa-shield-halved text-digi fs-4 mb-2 d-block" aria-hidden="true"></i>
+                            <span class="d-block text-dark fw-bold small">ضمانت اصالت</span>
+                        </div>
+                        <div class="col-4 border-start border-end border-2 border-white">
+                            <i class="fa-solid fa-truck-fast text-digi fs-4 mb-2 d-block" aria-hidden="true"></i>
+                            <span class="d-block text-dark fw-bold small">ارسال سریع</span>
+                        </div>
+                        <div class="col-4">
+                            <i class="fa-solid fa-headset text-digi fs-4 mb-2 d-block" aria-hidden="true"></i>
+                            <span class="d-block text-dark fw-bold small">پشتیبانی تخصصی</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-3 border-top">
+                    <div class="mb-4">
+                        <span class="text-muted d-block small fw-bold mb-1">قیمت:</span>
+                        <span class="fs-4 fw-extrabold text-digi">برای استعلام قیمت تماس بگیرید</span>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6">
+                            <a href="tel:09120346053" class="btn btn-digi w-100 py-3 rounded-4 fw-bold shadow-sm d-flex align-items-center justify-content-center gap-2">
+                                <i class="fa-solid fa-phone fs-5" aria-hidden="true"></i>
+                                <span>تماس ۰۹۱۲۰۳۴۶۰۵۳</span>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <a href="{{wa_url}}" target="_blank" rel="noopener" class="btn btn-outline-dark w-100 py-3 rounded-4 fw-bold d-flex align-items-center justify-content-center gap-2">
+                                <i class="fa-brands fa-whatsapp fs-5" aria-hidden="true"></i>
+                                <span>پیام در واتساپ</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card border-0 shadow-sm rounded-5 p-4 p-lg-5 bg-white mb-4">
+        <div class="border-bottom pb-3 mb-4 d-flex align-items-center gap-2">
+            <div class="bg-danger-subtle text-digi p-2 rounded-3">
+                <i class="fa-solid fa-list-check fs-4" aria-hidden="true"></i>
+            </div>
+            <h2 class="h4 fw-bold text-dark mb-0">مشخصات</h2>
+        </div>
+        <dl class="row mb-0 gt-specs">
+{{spec_rows}}
+        </dl>
+    </div>
+
+    <div class="card border-0 shadow-sm rounded-5 p-4 p-lg-5 bg-white mb-5">
+        <div class="border-bottom pb-3 mb-4 d-flex align-items-center gap-2">
+            <div class="bg-danger-subtle text-digi p-2 rounded-3">
+                <i class="fa-solid fa-file-lines fs-4" aria-hidden="true"></i>
+            </div>
+            <h2 class="h4 fw-bold text-dark mb-0">معرفی و راهنمای خرید</h2>
+        </div>
+
+        <div class="text-secondary lh-lg fs-6 product-description p-2">
+{{caption_html}}
+        </div>
+    </div>
+
+{{related_html}}
+
+</div>
+    </main>
+
+<!-- @@cta:start -->
+<!-- @@cta:end -->
+
+<!-- @@footer:start -->
+<!-- @@footer:end -->
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/mobile.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <!-- اسکریپت مدیریت سرچ‌بار در موبایل -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleBtn = document.getElementById('toggleSearchBtn');
+            const closeBtn = document.getElementById('closeSearchBtn');
+            const searchForm = document.getElementById('mainSearchForm');
+            const searchInput = document.getElementById('searchInput');
+
+            if (toggleBtn && searchForm) {
+                toggleBtn.addEventListener('click', function () {
+                    searchForm.classList.add('active');
+                    if (searchInput) searchInput.focus();
+                });
+            }
+
+            if (closeBtn && searchForm) {
+                closeBtn.addEventListener('click', function () {
+                    searchForm.classList.remove('active');
+                });
+            }
+        });
+    </script>
+
+    <!-- اسکریپت اختصاصی هر صفحه -->
+    
+    
+
+</body>
+</html>
